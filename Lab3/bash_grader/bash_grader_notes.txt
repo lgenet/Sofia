@@ -1,0 +1,62 @@
+bash_grader
+
+Supported arguments:
+
+-n	No Build. Does not build students assignments from the input directory, starts evaluating
+	 at the first student in the output directory. Any previous evaluations will be lost
+
+-r	Report. Generate the grade report from existing evaluations. Does not build or evaluate
+
+-h	Help. Shows basic operating instructions
+
+-l [number] Late Penalty. This will deduct a late penalty from each assignment that is evaluated
+-g Generate Section List. Given as input a .txt file with student names, one per line, will generate a default Section List
+
+
+Algorithm:
+
+set default variables
+parse .conf file
+Parse arguments
+if -r
+	generate report
+	exit
+if ! no build
+	Sanitize
+	Search for all source files
+	For each source file
+		Parse student name into sname
+		if not found, prompt for user input
+		echo "Building $sname
+		if directory called $sname exists,
+			mkdir $sname + 'x'
+		else
+			makdir $sname
+		copy source file to output folder
+		compile source directing stderr to 'err.txt'
+		create input file
+fi
+
+for each directory in the output directory
+	if 'a.out' exists
+		run a.out
+	else
+		print err.txt
+	evaluate
+	generate 'grade.txt' file
+
+load section list and nick names
+search output directory for 'grade.txt' files
+Parse name and grade
+match master student name and grade student name
+write .csv file called $assignmentName + TimeStamp
+
+
+
+
+
+
+.cfg file parameters:
+	language (C++ or Java)
+	which input.txt file to generate
+	assignment name

@@ -1,0 +1,10 @@
+#bash_grader section list file
+#Lines that are blank or START with a ‘#’ will be ignored
+#This file must be in the format:
+#[Master Name] (Spaces are allowed)
+#	[Nick Name] (Spaces are allowed)
+#	…
+#	[Nick Name]
+#[Master Name]
+#…
+

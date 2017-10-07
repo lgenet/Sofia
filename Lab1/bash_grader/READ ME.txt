@@ -1,0 +1,76 @@
+bash_grader for c++ and Java(Work in Progress)
+
+Section 1.1 Introduction
+
+The bash_grader application consists of 5 individual files with must be present.
+
+1.	bash_grader.sh
+2.	bash_grader.cfg
+3.	SanitizeCpp.java
+4.	Generate_grade_report.java
+5.	Generate_Default_Section_List.java
+
+In addition, you will need to prepare a Section List, which will be covered in section XX.XX of this manual
+
+
+Section 1.2 File Descriptions
+
+This section describes each of the 5 required files and the Section List
+
+	Section 1.2.1 bash_grader.sh
+
+The bash_grader.sh file is the main driver of the application. This the Bash shell script that you must invoke to start the application. See Section XX.XX for how to start the application. The bash_grader.sh file can accept several flag arguments that alter its behavior. these arguments are as follows:
+
+Supported arguments:
+
+-n	No Build. Does not build students assignments from the input directory, starts evaluating
+	 at the first student in the output directory. Any previous evaluations will be lost
+
+-r	Report. Generate the grade report from existing evaluations. Does not build or evaluate
+
+-h	Help. Shows basic operating instructions
+
+-l	[number] Late Penalty. This will deduct a late penalty from each assignment that is evaluated
+
+-g	Generate Section List. Given as input a .txt file with student names, one per line, will generate a default Section List
+
+	Section 1.2.2 bash_grader.cfg
+
+The bash_grader.cfg file is the configuration file that is loaded when the main shell script is called. This file allows the users to set preferences such as the language you are grading, the name of the assignment, the input file you want to use for each assignment, and others. If this file is not found or any of the entries are not present, you will be prompted for their values each time the program is run.
+
+The default configuration file looks a follows:
+
+#	The language the assignments are written in
+#LANGUAGE=c++
+#	The file that will be used as input to student's assignment
+#INPUT_FILE=lab5.txt
+#	The name of the assignment
+#ASSIGNMENT_NAME=Test_Assignment
+#	The number of points to subtract from each assignment
+#LATE_P=0
+#	The master list of all students
+#sectionlist=DefautSectionList.txt
+
+Any line beginning with a ‘#’ is a comment and will be ignored by the program. Blank lines are also permitted and will be ignored.
+
+The ‘LANGUAGE’ option tells the program what language the assignments to be graded are written in. Right now this program only supports c++ programs so it is recommended to uncomment this line (remove the ‘#’ character) and leave it at its default value.
+
+The “INPUT_FILE’ option is used to tell the program the name and location of the file you want to use as input to any assignment. If this is not required for your program, either leave it commented, or leave its value blank.
+
+The ‘ASSIGNMENT_NAME’ option is used to set the name of the assignment being graded. This will be reflected on the grade report produced at the completion of the program.
+
+The ‘LATE_P’ option is used incase the user wants to apply a fixed late penalty to any assignment. If this option is uncommented or given a value what ever number of points is specified is subtracted from every assignment being graded.
+
+The ‘sectionlist’ option tells the bash_grader the name and location of the Section List file. See Section XX.XX for a description of the Section List file.
+
+	Section 1.2.3 SanitizeCpp.java
+
+The SanitizeCpp.java file is a java program for sanitizing the c++ or Java files before they are compiled and graded. It is automatically compiled and invoked by the bash_grader.sh file.
+
+	Section 1.2.4 Generate_grade_report.java
+
+The Generate_grade_report.java file is for generating the final grade report after all the assignments have been graded. It is automatically compiled and invoked by the bash_grader.sh file.
+
+	Section 1.2.5 Generate_Default_Section_List.java
+
+The Generate_Default_Section_List.java is used to generate a default section list in the proper format based on a list of students provided by the user. It is automatically compiled and invoked by the bash_grader.sh file.
