@@ -1,0 +1,10 @@
+Code follows formatting guidelines
+Header | Header | 5
+Purpose | Purpose | 4
+Indentation | Indentation | 3
+Section Headers | Section Headers are present and correct | 5
+Good Practices | Follows good coding standards | 2
+unneeded Includes | Does not include unneeded #includes | 1
+
+|||Program functions correctly
+unit tests | Passes Unit Tests | 75
