@@ -1,0 +1,55 @@
+import Builder.FileLoader;
+import GUI.MainFrame;
+import Lab.LabLoader;
+import Lab.LabManager;
+import SofiaCore.ConfigManager;
+
+import javax.swing.*;
+import java.io.*;
+
+/**
+ * Created by Logan on 10/14/2017.
+ */
+
+public class Core extends JPanel {
+    static MainFrame mf;
+
+    private static ConfigManager getConfig() {
+        ConfigManager ss;
+        try {
+            FileInputStream fin = new FileInputStream(new File("oonfig.ser"));
+            ObjectInputStream oos = new ObjectInputStream(fin);
+            ss = (ConfigManager) oos.readObject();
+            fin.close();
+            oos.close();
+        } catch (Exception e) {
+            System.err.println("Could not open config file! " + e);
+            ss = new ConfigManager();
+        }
+        return ss;
+    }
+
+    public static void main(String args[]) {
+        ConfigManager cm = getConfig();
+        String[] studentList = {"logan", "kristy", "addison"};
+
+        int res = JOptionPane.showConfirmDialog(null, "Question to test input","My Title", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showMessageDialog(null, "Res was " + res);
+        if(!cm.getStudentListPath().equals("")) {
+            studentList = FileLoader.loadStudentList(new File(cm.getStudentListPath()));
+        }
+        LabManager manager = new LabManager(studentList, 0);
+
+        mf = new MainFrame(manager, cm);
+        try {
+            String welcome = LabLoader.readFile("welcomeMessage.txt");
+            System.out.println(welcome);
+        }
+        catch(Exception e) {
+            System.out.println("Good day my name is Sofia, and I am here to be you guide.");
+        }
+
+        // TODO: Prompt before starting grade
+        // TODO: Make run unit tests and auto apply those graded points
+    }
+}
