@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 
 /**
  * Created by Logan on 10/15/2017.
@@ -77,6 +78,24 @@ public class MainFrame extends JFrame {
         return fc;
     }
 
+    public String getPath(boolean directoryOnly) {
+        fc.setCurrentDirectory(new File("."));
+
+        if(directoryOnly) {
+            fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        }
+        else {
+            fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        }
+
+        int returnVal = fc.showOpenDialog(fc);
+
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            return fc.getSelectedFile().getPath();
+        }
+        return "";
+    }
+
     public void clearGradingScreen() {
         consolePane.clearScreen();
     }
@@ -89,6 +108,7 @@ public class MainFrame extends JFrame {
         labPane.setLabView(lab);
     }
 
+    public String[] getStudentList () { return manager.getStudentList(); }
     public void setStudentList(String[] list) {
         manager.setStudentList(list);
     }

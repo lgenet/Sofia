@@ -1,99 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Sofia" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="674d6eac-f29b-4fcd-8c23-883086bf0bc3" name="Default" comment="Pass 2 of building the Sofia Grader as a java application">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/ConsolePanel$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/ConsolePanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Core.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/FileLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/FileMenu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/GradeButton$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/GradeButton$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/GradeButton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Reporting/GradeReport$FileSearch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Reporting/GradeReport$Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Reporting/GradeReport.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/GraderEvent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/HelpMenu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/Lab.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/LabPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/MainMenuBar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/NextButton$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/NextButton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/PreviousButton$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/PreviousButton.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/Question.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/QuestionGroup.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ReportMenu$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ReportMenu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Runner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/SanitizeCpp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Sofia_bash.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/TestResult.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/TextAreaOutputStream$Appender.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/TextAreaOutputStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/UnzipUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tesst.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ConsolePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Core.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Builder/Extractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Builder/FileLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/GradeButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Reporting/GradeReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/GraderEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/Lab.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/LabLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/LabManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/LabPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/MainFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu/MainMenuBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/NextButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/PreviousButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/Question.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/QuestionGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/Menu/ReportMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Builder/Runner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Builder/SanitizeCpp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sofia.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sofia_bash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lab/TestResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/TextAreaOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Builder/UnzipUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.cfg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extraction-errors.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab1.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab1Questions.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rubrics/lab1Questions.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oonfig.ser" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studentlist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/welcomeMessage.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sanitizer/Sanitizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/UnitTests/lab_1_test.cpp" />
+      <change type="DELETED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\config.cfg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\Builder\SanitizeCpp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\GUI\Menu\ConfigMenu$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\GUI\Menu\ConfigMenu$5.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\src\Builder\SanitizeCpp.java" afterPath="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" afterPath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$1.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$2.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu$2.class" />
+      <change type="MODIFICATION" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\GUI\Menu\ConfigMenu$3.class" afterPath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\GUI\Menu\ConfigMenu$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Core.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Core.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/FileMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/HelpMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/HelpMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/LabLoader.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Builder/Runner.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" afterPath="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" afterPath="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core.java" afterPath="$PROJECT_DIR$/src/Core.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Builder/Extractor.java" afterPath="$PROJECT_DIR$/src/Builder/Extractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Builder/FileLoader.java" afterPath="$PROJECT_DIR$/src/Builder/FileLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" afterPath="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java" afterPath="$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/LabLoader.java" afterPath="$PROJECT_DIR$/src/Lab/LabLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/LabManager.java" afterPath="$PROJECT_DIR$/src/Lab/LabManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainFrame.java" afterPath="$PROJECT_DIR$/src/GUI/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Builder/Runner.java" afterPath="$PROJECT_DIR$/src/Builder/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab1.cpp" afterPath="$PROJECT_DIR$/lab1.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oonfig.ser" afterPath="$PROJECT_DIR$/oonfig.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sofia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,28 +61,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core.java">
+      <file leaf-file-name="ConfigMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#initSetAutoContinue#0;class#ConfigMenu#0" expanded="false" />
+                <element signature="method#initSetRunTestOnSwitch#0;class#ConfigMenu#0" expanded="false" />
+                <element signature="method#initSetLabNumber#0;class#ConfigMenu#0" expanded="false" />
+                <element signature="method#initSetInputFile#0;class#ConfigMenu#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java">
+      <file leaf-file-name="FileMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+              <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
               <folding>
-                <element signature="method#ConfigMenu#0;class#ConfigMenu#0" expanded="false" />
-                <element signature="method#getPath#0;class#ConfigMenu#0" expanded="false" />
-                <element signature="method#initSetAutoContinue#0;class#ConfigMenu#0" expanded="false" />
-                <element signature="method#initSetRunTestOnSwitch#0;class#ConfigMenu#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/Builder/Extractor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="73" />
+              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,46 +100,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileMenu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70698464">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5602716">
+              <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.88">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SanitizeCpp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Builder/SanitizeCpp.java">
+      <file leaf-file-name="LabLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lab/LabLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,12 +124,32 @@
         <entry file="file://$PROJECT_DIR$/src/SofiaCore/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
-                <element signature="e#4376#4377#0" expanded="true" />
-                <element signature="e#4411#4412#0" expanded="true" />
-                <element signature="e#4468#4469#0" expanded="true" />
-                <element signature="e#4516#4517#0" expanded="true" />
+                <element signature="e#3336#3337#0" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
+                <element signature="e#3436#3437#0" expanded="true" />
+                <element signature="e#3490#3491#0" expanded="true" />
+                <element signature="e#3533#3534#0" expanded="true" />
+                <element signature="e#3572#3573#0" expanded="true" />
+                <element signature="e#5538#5539#0" expanded="true" />
+                <element signature="e#5579#5580#0" expanded="true" />
+                <element signature="e#5647#5648#0" expanded="true" />
+                <element signature="e#5707#5708#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2225#2226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,26 +159,8 @@
         <entry file="file://$PROJECT_DIR$/src/Builder/FileLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2179#2180#0" expanded="true" />
-                <element signature="e#2204#2205#0" expanded="true" />
-                <element signature="e#2244#2245#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2317#2318#0" expanded="true" />
-                <element signature="e#2362#2363#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -262,13 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lab1Questions.txt" />
-        <option value="$PROJECT_DIR$/lab1Questions.txt" />
-        <option value="$PROJECT_DIR$/src/Question.java" />
-        <option value="$PROJECT_DIR$/src/TextAreaOutputStream.java" />
-        <option value="$PROJECT_DIR$/src/Console.java" />
-        <option value="$PROJECT_DIR$/src/JTextFieldInputStream.java" />
-        <option value="$PROJECT_DIR$/src/GUI/TextAreaOutputStream.java" />
         <option value="$PROJECT_DIR$/src/Lab.java" />
         <option value="$PROJECT_DIR$/src/QuestionGroup.java" />
         <option value="$PROJECT_DIR$/lab1.cpp" />
@@ -282,7 +199,6 @@
         <option value="$PROJECT_DIR$/Inputs/kristy/lab.cpp" />
         <option value="$PROJECT_DIR$/welcomeMessage.txt" />
         <option value="$PROJECT_DIR$/src/GUI/LabPanel.java" />
-        <option value="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" />
         <option value="$PROJECT_DIR$/src/Builder/runner.java" />
         <option value="$PROJECT_DIR$/src/Lab/TestResult.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainMenuBar.java" />
@@ -297,22 +213,38 @@
         <option value="$PROJECT_DIR$/src/GUI/ConsolePanel.java" />
         <option value="$PROJECT_DIR$/src/Builder/ZipUtil.java" />
         <option value="$PROJECT_DIR$/src/Builder/UnzipUtil.java" />
+        <option value="$PROJECT_DIR$/src/Builder/StudentNameLoader.java" />
+        <option value="$PROJECT_DIR$/studentlist.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Builder/SanitizeCpp.java" />
         <option value="$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java" />
         <option value="$PROJECT_DIR$/src/Lab/LabLoader.java" />
-        <option value="$PROJECT_DIR$/src/Lab/LabManager.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
-        <option value="$PROJECT_DIR$/src/Builder/StudentNameLoader.java" />
-        <option value="$PROJECT_DIR$/src/Builder/FileLoader.java" />
-        <option value="$PROJECT_DIR$/studentlist.txt" />
+        <option value="$PROJECT_DIR$/src/Sanitizer/Sanitizer.java" />
+        <option value="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" />
         <option value="$PROJECT_DIR$/src/Core.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/Builder/SanitizeCpp.java" />
-        <option value="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/config.ser" />
+        <option value="$PROJECT_DIR$/src/Lab/LabManager.java" />
         <option value="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" />
+        <option value="$PROJECT_DIR$/resources/UnitTests/lab_1_test.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab1/Aaron Hiller/lab.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab1/Aaron Hiller/lab_test.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab_test.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab1.cpp" />
         <option value="$PROJECT_DIR$/src/Builder/Runner.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/Builder/Extractor.java" />
+        <option value="$PROJECT_DIR$/src/Builder/FileLoader.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -347,8 +279,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -378,42 +308,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SofiaCore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,13 +379,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rubrics" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,23 +429,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/MainFrame.java&#10;labm&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Lab/LabManager.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="GUI" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Release" />
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\resources" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1\kristy" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1\logan" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia" />
-      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Rubrics" />
-      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\kristy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\resources" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia" />
     </key>
@@ -634,6 +564,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Sofia/Sofia.jar" />
       <envs />
       <method />
     </configuration>
@@ -703,6 +634,13 @@
       <option name="number" value="Default" />
       <updated>1508016538130</updated>
     </task>
+    <task id="LOCAL-00001" summary="Published JAR">
+      <created>1508807053538</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508807053538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -719,12 +657,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756758" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -733,14 +673,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -757,7 +695,8 @@
   <component name="VcsManagerConfiguration">
     <confirmMoveToFailedCommit value="1" />
     <MESSAGE value="Pass 2 of building the Sofia Grader as a java application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pass 2 of building the Sofia Grader as a java application" />
+    <MESSAGE value="Published JAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Published JAR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -770,7 +709,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Builder/Extractor.java</url>
-          <line>92</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -778,7 +717,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -787,48 +726,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Builder/Extractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="38" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="87" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studentlist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/SanitizeCpp.java">
+    <entry file="file://$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#sanitizeForStudentName#0;class#SanitizeCpp#0" expanded="false" />
+            <element signature="method#sanitizeForIO#0;class#SanitizeCpp#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -838,10 +743,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#4376#4377#0" expanded="true" />
-            <element signature="e#4411#4412#0" expanded="true" />
-            <element signature="e#4468#4469#0" expanded="true" />
-            <element signature="e#4516#4517#0" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#3436#3437#0" expanded="true" />
+            <element signature="e#3490#3491#0" expanded="true" />
+            <element signature="e#3533#3534#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+            <element signature="e#5538#5539#0" expanded="true" />
+            <element signature="e#5579#5580#0" expanded="true" />
+            <element signature="e#5647#5648#0" expanded="true" />
+            <element signature="e#5707#5708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,12 +771,12 @@
           <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2801#2802#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="e#2917#2918#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -884,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,10 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37011886">
           <caret line="48" column="44" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="44" />
-          <folding>
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29881155">
           <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,29 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#405#414#0" expanded="false" />
-            <element signature="e#3524#3532#0" expanded="false" />
-            <element signature="e#3581#3582#0" expanded="false" />
-            <element signature="e#3628#3629#0" expanded="false" />
-            <element signature="e#3696#3697#0" expanded="false" />
-            <element signature="e#3760#3761#0" expanded="false" />
-            <element signature="e#3803#3804#0" expanded="false" />
-            <element signature="e#3840#3841#0" expanded="false" />
-            <element signature="e#5740#5741#0" expanded="false" />
-            <element signature="e#5776#5777#0" expanded="false" />
-            <element signature="e#5816#5817#0" expanded="false" />
-            <element signature="e#5859#5860#0" expanded="false" />
-            <element signature="e#5900#5901#0" expanded="false" />
-            <element signature="e#5942#5943#0" expanded="false" />
-            <element signature="e#5977#5978#0" expanded="false" />
-            <element signature="e#6013#6014#0" expanded="false" />
-            <element signature="e#6054#6055#0" expanded="false" />
-            <element signature="e#6087#6088#0" expanded="false" />
-            <element signature="e#6124#6125#0" expanded="false" />
-            <element signature="e#6162#6163#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -980,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29881155">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="86" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,9 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,22 +925,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oonfig.ser">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,31 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/UnzipUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extraction-errors.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37011886">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,36 +979,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/LabLoader.java">
+    <entry file="file://$PROJECT_DIR$/studentlist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6252252">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/LabManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sanitizeForStudentName#0;class#SanitizeCpp#0" expanded="false" />
+            <element signature="method#sanitizeForIO#0;class#SanitizeCpp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77249575">
+          <caret line="57" column="72" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oonfig.ser">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11205433">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studentlist.txt">
+    <entry file="file://$PROJECT_DIR$/src/Lab/LabManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ser">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/FileLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/Sanitizer/Sanitizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab1/logan/Lab#7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11205433">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab1/logan/lab1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14940578">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab1/logan/lab_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29881155">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lab/LabLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Builder/UnzipUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1205432">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab7/Aaron Hiller/lab.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SofiaCore/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#3436#3437#0" expanded="true" />
+            <element signature="e#3490#3491#0" expanded="true" />
+            <element signature="e#3533#3534#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+            <element signature="e#5538#5539#0" expanded="true" />
+            <element signature="e#5579#5580#0" expanded="true" />
+            <element signature="e#5647#5648#0" expanded="true" />
+            <element signature="e#5707#5708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/UnitTests/lab_1_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11205433">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1178,98 +1151,51 @@
     <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2225#2226#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-          <folding>
-            <element signature="method#ConfigMenu#0;class#ConfigMenu#0" expanded="false" />
-            <element signature="method#getPath#0;class#ConfigMenu#0" expanded="false" />
-            <element signature="method#initSetAutoContinue#0;class#ConfigMenu#0" expanded="false" />
-            <element signature="method#initSetRunTestOnSwitch#0;class#ConfigMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SofiaCore/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#4376#4377#0" expanded="true" />
-            <element signature="e#4411#4412#0" expanded="true" />
-            <element signature="e#4468#4469#0" expanded="true" />
-            <element signature="e#4516#4517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/SanitizeCpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.88">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Builder/Extractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="73" />
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core.java">
+    <entry file="file://$PROJECT_DIR$/src/Builder/FileLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#initSetAutoContinue#0;class#ConfigMenu#0" expanded="false" />
+            <element signature="method#initSetRunTestOnSwitch#0;class#ConfigMenu#0" expanded="false" />
+            <element signature="method#initSetLabNumber#0;class#ConfigMenu#0" expanded="false" />
+            <element signature="method#initSetInputFile#0;class#ConfigMenu#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70698464">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5602716">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,10 +1205,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Sofia</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

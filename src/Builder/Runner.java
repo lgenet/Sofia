@@ -1,7 +1,12 @@
 package Builder;
 
+import GUI.MainFrame;
+import sun.plugin.perf.PluginRollup;
+
 import javax.swing.*;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Time;
 import java.util.concurrent.TimeUnit;
@@ -10,12 +15,7 @@ import java.util.concurrent.TimeUnit;
  * Created by Logan on 10/18/2017.
  */
 public class Runner {
-    private static void printOutputSeparator(int n) {
-        for(int i = 0; i < n; i++) {
-            System.out.print("=");
-        }
-        System.out.println();
-    }
+
     private static void waitFor(Process process, int limit) {
         long start = System.currentTimeMillis();
         while(process.isAlive() && System.currentTimeMillis() - start < limit);
@@ -42,52 +42,90 @@ public class Runner {
         String results = "";
         try {
             BufferedReader reader = Runner.runExecutableProcess(fileName);
-            String line;
-            if(reader == null) {
-                throw new Exception("Could not run process at " +fileName);
-            }
-            while ((line = reader.readLine()) != null) {
-                results += line + "\n";
-            }
+            results = getResults(reader);
         } catch(Exception e) {
             JOptionPane.showMessageDialog(null, "I am sorry, but I could not get the output of the process like you asked me to.  " +
                     "Here is some more details.\n" + e);
         }
         return results;
     }
-    public static void runAndPrint(String fileName) {
-        try {
-            BufferedReader reader = Runner.runExecutableProcess(fileName);
-            String line;
 
-            System.out.println("Results of Lab Run");
-            printOutputSeparator(50);
-            while ((line = reader.readLine()) != null) {
-                System.out.println (line);
-            }
-            printOutputSeparator(50);
-        } catch(Exception e) {
-            System.out.println(e.toString());
-            e.printStackTrace();
+    private static String getResults(BufferedReader reader) throws IOException {
+        String line, results = "";
+        while ((line = reader.readLine()) != null) {
+            results += line + "\n";
         }
+        return results;
     }
 
-    public static void compile() {
+    // TODO: Add way to run both the file and unit tests upon request - Extra feature
+    // TODO: Write compilers for things beyond C++ and add a switch that will use the right one
+    // TODO: break this out to a compiler file that can compile into multiple langauges
+    public static void compile(MainFrame context) {
+        String[] studentList = context.getStudentList();
+        String compilerPref = context.config.getCompilerPreference();
+        if(!compilerPref.equals("Runnable")){
+            context.displayMessage("I am going to start the compilation step now... this is going to take a good amount of time.  " +
+                    "I apologize in advance, but please just be patient, I will let you know when it's done!");
+        }
+        else {
+            context.displayMessage("I am going to start the compilation step now... this might take a few moments...");
+        }
+
+        for(int i = 0; i < studentList.length; i++) {
+            String labPath = context.config.getStudentInputPath() + "Lab" + context.config.getLabNumber() + "/" + studentList[i];
+            switch (compilerPref) {
+                case "Both":
+                    compileForRunning(context, labPath);
+                    compileForUnitTest(context, labPath);
+                    break;
+                case "UnitTest":
+                    compileForUnitTest(context, labPath);
+                    break;
+                case "Runnable":
+                    compileForRunning(context, labPath);
+                    break;
+                default:
+                    context.displayMessage("Uh... I am not quite sure what happened but I dont think your compiler preference is valid." +
+                            "I am sorry about that, I will stop trying to compile.  You should probably check this preference " +
+                            "before trying to compile again...");
+                    return;
+            }
+        }
+    }
+    private static void compileForRunning(MainFrame context, String labPath) {
+        String outputName = "runnable" + context.config.getUnitTestExeName();
+        ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labPath + "/lab.cpp", "-o", outputName);
+        runProcess(context, proc);
+    }
+
+    public static void compileForUnitTest(MainFrame context, String labPath) {
+        //g++ -std=c++14 -isystem ../../googletest/googletest/include -pthread ./lab_test.cpp  ../../libgtest.a
+        String outputName = "unitTest" + context.config.getUnitTestExeName();
+        String testFile = "./lab_test.cpp";
+        ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), "-std=c++14", "-isystem",
+                "../../../resources/googletest/include", "-pthread",
+                "../../../resources/libgtest.a",
+                testFile, "-o", outputName);
+        proc.directory(new File(labPath));
+        runProcess(context, proc);
+    }
+    private static void runProcess(MainFrame context, ProcessBuilder compileProcess) {
         try {
-            //g++ -std=c++14 -isystem ../../googletest/googletest/include -pthread ./lab_test.cpp  ../../libgtest.a
-            ProcessBuilder launcher = new ProcessBuilder("g++", "-std=c++14", "-isystem",
-                    "../../googletest/googletest/include", "-pthread",
-                    "lab_test.cpp", "../../libgtest.a", "-o", "unitTest");
-            Process process = launcher.start();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            Process process = compileProcess.start();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 
             waitFor(process, 10000);
 
             process.destroy();
             process.waitFor(); // wait for the process to terminate
+            String errors = getResults(reader);
+            if(!errors.isEmpty()) {
+                context.displayError("I found some errors while compiling... here's what happened:\n\n" + errors);
+            }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "I am sorry, but I could compile the test file for you.  Here is some more details.\n" + e);
+            context.displayError("I am sorry, but something went really wrong while trying to compile that file for you.  " +
+                    "Here are some more details:\n" + e);
         }
-//        return reader;
     }
 }

@@ -2,7 +2,8 @@ package GUI.Menu;
 
 import Builder.Extractor;
 import Builder.FileLoader;
-import Builder.SanitizeCpp;
+import Builder.Runner;
+import Sanitizer.SanitizeCpp;
 import GUI.MainFrame;
 
 import javax.swing.*;
@@ -109,7 +110,10 @@ public class FileMenu extends Menu {
     private MenuItem initCompiler() {
         MenuItem compiler = new MenuItem("Compile Lab Tests");
         compiler.addActionListener(e -> {
-            context.displayMessage("Sorry, but I don't know the first thing about compilers!");
+//            context.displayMessage("So I have here that you want me to compile for: " + context.config.getCompilePreference(), but I don't know the first thing about compilers!");
+
+            Runner.compile(context); // TODO: make config setting
+            context.displayMessage("Done compiling");
         });
         return compiler;
     }
@@ -141,8 +145,8 @@ public class FileMenu extends Menu {
     private void runSanitizeTasks() {
         try {
             SanitizeCpp.sanitize(context);
-        } catch (Exception e1) {
-            context.displayError("Failed to sanitize");
+        } catch (Exception e) {
+            context.displayError("I am terribly sorry, but I Failed to sanitize the labs like you asked... here is some more info\n" + e);
         }
     }
 }

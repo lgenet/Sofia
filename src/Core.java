@@ -17,7 +17,7 @@ public class Core extends JPanel {
     private static ConfigManager getConfig() {
         ConfigManager ss;
         try {
-            FileInputStream fin = new FileInputStream(new File("oonfig.ser"));
+            FileInputStream fin = new FileInputStream(new File("config.ser"));
             ObjectInputStream oos = new ObjectInputStream(fin);
             ss = (ConfigManager) oos.readObject();
             fin.close();
@@ -29,12 +29,11 @@ public class Core extends JPanel {
         return ss;
     }
 
+    // TODO: build tab view that will show all lab files not just the first one
     public static void main(String args[]) {
         ConfigManager cm = getConfig();
         String[] studentList = {"logan", "kristy", "addison"};
 
-        int res = JOptionPane.showConfirmDialog(null, "Question to test input","My Title", JOptionPane.YES_NO_OPTION);
-        JOptionPane.showMessageDialog(null, "Res was " + res);
         if(!cm.getStudentListPath().equals("")) {
             studentList = FileLoader.loadStudentList(new File(cm.getStudentListPath()));
         }

@@ -67,12 +67,13 @@ public class Extractor {
     }
     private static String getFileNameForCondenser(Path p) {
         String fileName = "" + p.getFileName();
-        if(fileName.indexOf(".cpp") != -1) {
+        String languageExt = context.config.getLanguageExt();
+        if(fileName.indexOf(languageExt) != -1) {
             if(labCount == 0) {
-                fileName = "lab.cpp";
+                fileName = "lab" + languageExt;
             }
             else {
-                fileName = "lab" + (char) ('a' + labCount) + ".cpp";
+                fileName = "lab" + (char) ('a' + labCount) + languageExt;
             }
             labCount++;
         }
@@ -85,31 +86,38 @@ public class Extractor {
 
         return temporaryLabPath;
     }
-    private static void condenseLabDirectory(String studentLabTemporaryPath, String studentName) throws IOException {
+    private static void copyUnitTestFile(String studentPath) {
+        String unitTestPath = "./resources/UnitTests/lab_" + context.config.getLabNumber() + "_test.cpp";
+        try {
+            FileLoader.copyFile(Paths.get(unitTestPath), Paths.get(studentPath));
+        } catch (IOException e) {
+            context.displayError("I am sorry about this but I could not add the unit test file to the student's submission package");
+        }
+    }
+    private static String condenseLabDirectory(String studentLabTemporaryPath, String studentName) throws IOException {
         labCount = 0;
+        String finalStudentPath = getStudentLabDestinationPath() + "/" + studentName + "/";
         Files.walk(Paths.get(studentLabTemporaryPath))
-            .forEach((FROM) -> {
-                String fullPath = getStudentLabDestinationPath() + "/" + studentName + "/" + getFileNameForCondenser(FROM);
-                Path TO = Paths.get(fullPath);
+            .forEach((from) -> {
+                String fullPath = finalStudentPath + getFileNameForCondenser(from);
+                Path to = Paths.get(fullPath);
 
-                if (!FROM.toFile().isDirectory()) {
+                if (!from.toFile().isDirectory()) {
                     new File(fullPath).getParentFile().mkdirs();
 
-                    //overwrite existing file, if exists
-                    CopyOption[] options = new CopyOption[]{
-                            StandardCopyOption.REPLACE_EXISTING,
-                            StandardCopyOption.COPY_ATTRIBUTES
-                    };
                     try {
-                        Files.copy(FROM, TO, options);
-                    } catch (IOException ioe) {
-                        writeToLog(FROM, TO);
-                        context.displayError("Failed to copy files to temporary location: " + ioe, "Extract Error - Copy");
+                        FileLoader.copyFile(from, to);
+                    } catch (IOException e) {
+                        writeToLog(from, to);
+                        context.displayMessage("I am sorry but, I could not copy a file from its temporary location to its final " +
+                                "destination during lab extraction...  Here is all I know:\n" + e);
                     }
                 }
 
             });
+        return finalStudentPath;
     }
+
     private static void writeToLog(Path from, Path to) {
         logWriter.println("Could not move: \t" + from + "\tTO\t" + to);
     }
@@ -156,10 +164,11 @@ public class Extractor {
         for (int i = 0; i < listOfStudentZips.length; i++) {
             File current = listOfStudentZips[i];
             String studentName = getStudentNameFromFile(current);
-
+// TODO: Eval if we want to update student list here?
             try {
                 String studentLabTemporaryPath = extractStudentSubmission(current, studentName);
-                condenseLabDirectory(studentLabTemporaryPath, studentName);
+                String studentLabFinalPath = condenseLabDirectory(studentLabTemporaryPath, studentName);
+                copyUnitTestFile(studentLabFinalPath);
             }
             catch(IOException ioe) {
                 context.displayError("I am sorry, but I could not extract the lab file for " + studentName +

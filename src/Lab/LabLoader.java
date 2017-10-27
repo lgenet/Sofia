@@ -17,7 +17,7 @@ public class LabLoader {
             labList[i] = new Lab(context.config.getLabNumber(), studentList[i], buildQuestionList(rawData), lateFee);
 
             String labPath =  "Lab" + context.config.getLabNumber() + "/";
-            String labDocumentPath = context.config.getStudentInputPath() + labPath + studentList[i] + "/lab.cpp";
+            String labDocumentPath = context.config.getStudentInputPath() + labPath + studentList[i] + "/lab" + context.config.getLanguageExt();
             String gradePath = context.config.getStudentGradePath() + labPath +studentList[i] +"-Grade.txt";
 
             labList[i].setLabDocument(LabLoader.loadFromFile(labDocumentPath));

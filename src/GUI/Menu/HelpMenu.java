@@ -54,4 +54,6 @@ public class HelpMenu extends Menu{
         showConfig.addActionListener(e -> JOptionPane.showMessageDialog(null, "Sure thing, this is what I have in mind.  Does this look right to you?\n\n" + context.config));
         return showConfig;
     }
+    // TODO: add menu to talk about how to get g++ on windows and configure it
+    // TODO: add menu to talk about how to get googleTest and compile it
 }

@@ -3,6 +3,8 @@ package Builder;
 import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,6 +29,17 @@ public class FileLoader {
                     "\n" + e);
             return new String[0];
         }
+    }
 
+    public static void copyFile(String from, String to) throws IOException {
+        copyFile(Paths.get(from), Paths.get(to));
+    }
+    public static void copyFile(Path from, Path to) throws IOException {
+        //overwrite existing file, if exists
+        CopyOption[] options = new CopyOption[]{
+                StandardCopyOption.REPLACE_EXISTING,
+                StandardCopyOption.COPY_ATTRIBUTES
+        };
+        Files.copy(from, to, options);
     }
 }

@@ -6,12 +6,12 @@
 
 // Purpose:         To calculate the area and perimeter of a trapezoid, after reading in itd dimensions from the user
 
-##include <iostream>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-    int topSize = 0, slantSide = 0, bottomSide = 0, height = 0;
+    int topSide = 0, slantSide = 0, bottomSide = 0, height = 0;
     cout << "Please enter the top side: ";
     cin >> topSide;
     cout << "Please enter the slant side: ";
@@ -22,7 +22,7 @@ int main() {
     cin >> height;
 
     double area = 1.0/2.0 * (topSide + bottomSide) * height;
-    double perimeter = topside + bottomSide + slantSide + slantSide;
+    double perimeter = topSide + bottomSide + slantSide + slantSide;
 
     cout << "The top side is " << topSide << endl;
     cout << "The slanted sides are " << slantSide << endl;

@@ -11,7 +11,10 @@ public class ConfigManager implements Serializable {
     private String studentGradePath;    // Directory path where the Student Grade reports can be found
     private String labRubricPath;       // Directory path where the Lab Questions can be found
 
+    private String cppCompilerPath;     // Path to the g++ compiler - Only needed for Windows, will default to g++ for linux
     private String unitTestExeName;     // Test file name.  Lab.exe for Windows or a.out for Linux
+    private String languageExt;         // Extension of the students work.  This is cpp for me, but  could be java or py, etc
+    private String compilerPreference;  // Whether to compile for Running, Unit Testing, or both
 
     private boolean autoSanitize;       // Will automatically perform sanitize action without prompting the user
     private boolean canAutoContinue;    // Will automatically go to the next lab after one is graded
@@ -27,6 +30,9 @@ public class ConfigManager implements Serializable {
         labRubricPath= "./rubrics/";
 
         unitTestExeName = "lab.exe";
+        languageExt = ".cpp";
+        cppCompilerPath = "g++";
+        compilerPreference = "UnitTesting";
 
         autoSanitize = false;
         canAutoContinue = false;
@@ -41,7 +47,10 @@ public class ConfigManager implements Serializable {
                 + "studentInputPath = " + studentInputPath + "\n"
                 + "studentGradePath = " + studentGradePath + "\n"
                 + "labRubricPath = " + labRubricPath + "\n"
+                + "cppCompilerPath = " + cppCompilerPath + "\n"
+                + "compilerPreference = " + compilerPreference + "\n"
                 + "unitTestExeName = " + unitTestExeName + "\n"
+                + "languageExt = " + languageExt + "\n"
                 + "autoSanitize = " + autoSanitize + "\n"
                 + "canAutoContinue = " + canAutoContinue + "\n"
                 + "runTestOnSwitch = " + runTestOnSwitch + "\n"
@@ -50,7 +59,7 @@ public class ConfigManager implements Serializable {
     }
     public void writeConfig() {
         try {
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("oonfig.ser")));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("config.ser")));
             oos.writeObject(this);
             oos.close();
         }
@@ -140,5 +149,23 @@ public class ConfigManager implements Serializable {
 
     public void setAutoSanitize(boolean autoSanitize) {
         this.autoSanitize = autoSanitize;
+    }
+
+    public String getLanguageExt() {
+        return languageExt;
+    }
+
+    public void setLanguageExt(String languageExt) { this.languageExt = languageExt; }
+
+    public String getCppCompilerPath() { return cppCompilerPath; }
+
+    public void setCppCompilerPath(String cppCompilerPath) { this.cppCompilerPath = cppCompilerPath; }
+
+    public String getCompilerPreference() {
+        return compilerPreference;
+    }
+
+    public void setCompilerPreference(String compilerPreference) {
+        this.compilerPreference = compilerPreference;
     }
 }

@@ -30,6 +30,9 @@ public class LabManager implements GraderEvent {
         studentList = list;
         rebuildLabs();
     }
+    public String[] getStudentList() {
+        return studentList;
+    }
 
     public void rebuildLabs() {
         currentIndex = -1;
