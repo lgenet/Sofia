@@ -1,15 +1,12 @@
 package Builder;
 
 import GUI.MainFrame;
-import sun.plugin.perf.PluginRollup;
 
 import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.Time;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Logan on 10/18/2017.
@@ -104,8 +101,8 @@ public class Runner {
         String outputName = "unitTest" + context.config.getUnitTestExeName();
         String testFile = "./lab_test.cpp";
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), "-std=c++14", "-isystem",
-                "../../../resources/googletest/include", "-pthread",
-                "../../../resources/libgtest.a",
+                "../../../Resources/googletest/include", "-pthread",
+                "../../../Resources/libgtest.a",
                 testFile, "-o", outputName);
         proc.directory(new File(labPath));
         runProcess(context, proc);

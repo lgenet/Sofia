@@ -41,7 +41,7 @@ public class Core extends JPanel {
 
         mf = new MainFrame(manager, cm);
         try {
-            String welcome = LabLoader.readFile("welcomeMessage.txt");
+            String welcome = LabLoader.readFile("./Resources/welcomeMessage.txt");
             System.out.println(welcome);
         }
         catch(Exception e) {

@@ -103,7 +103,7 @@ public class ConfigMenu extends Menu {
         libG.addActionListener(e -> {
             String libGPath = context.getPath(false);
             try {
-                FileLoader.copyFile(libGPath, "./resources/libgtest.a");
+                FileLoader.copyFile(libGPath, "./Resources/libgtest.a");
             } catch (IOException ex) {
                 context.displayError("I am sorry!  I could not copy the libgtest file to my resource list.  Here are some more details\n" + ex);
             }

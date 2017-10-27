@@ -87,9 +87,9 @@ public class Extractor {
         return temporaryLabPath;
     }
     private static void copyUnitTestFile(String studentPath) {
-        String unitTestPath = "./resources/UnitTests/lab_" + context.config.getLabNumber() + "_test.cpp";
+        String unitTestPath = "./Resources/UnitTests/lab_" + context.config.getLabNumber() + "_test.cpp";
         try {
-            FileLoader.copyFile(Paths.get(unitTestPath), Paths.get(studentPath));
+            FileLoader.copyFile(Paths.get(unitTestPath), Paths.get(studentPath + "lab_test.cpp"));
         } catch (IOException e) {
             context.displayError("I am sorry about this but I could not add the unit test file to the student's submission package");
         }
