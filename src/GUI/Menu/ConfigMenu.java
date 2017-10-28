@@ -20,6 +20,7 @@ public class ConfigMenu extends Menu {
     public ConfigMenu(MainFrame context) {
         super("Config");
         this.context = context;
+        this.add(initDebugMode());
         this.add(initGetLibgFile());
         this.add(initSetLabNumber());
         this.add(initSetInputFile());
@@ -97,6 +98,20 @@ public class ConfigMenu extends Menu {
             }
         });
         return compilerPref;
+    }
+    private MenuItem initDebugMode() {
+        MenuItem debug = new MenuItem("Enable Debug Mode");
+        debug.addActionListener(e -> {
+            context.config.setDebugMode(!context.config.isDebugMode());
+            if(context.config.isDebugMode()){
+                context.displayMessage("okay!  You are now running in debug mode!  These messages will appear slightly different... " +
+                    "They also might not sound like me, but they should provide additional diagnostic info");
+            }
+            else {
+                context.displayMessage("Okay!  I wont show you those pesky debug messages anymore.");
+            }
+        });
+        return debug;
     }
     private MenuItem initGetLibgFile() {
         MenuItem libG = new MenuItem("Select libgtest.a file");

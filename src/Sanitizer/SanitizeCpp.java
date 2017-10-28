@@ -36,6 +36,18 @@ public class SanitizeCpp extends Sanitizer {
 		String suggested = current.substring(0, current.indexOf("\""));
 		suggested += "\"" + fileName + "\"";
 		suggested += current.substring(current.lastIndexOf(")"), current.length());
+
+		if(askToChange(current, suggested)) {
+			return suggested;
+		}
+		return current;
+	}
+	private static String sanitizeForMain(String current) {
+		if(!current.contains("int main")) {
+			return current;
+		}
+		String suggested = "int lab()";
+
 		if(askToChange(current, suggested)) {
 			return suggested;
 		}
@@ -49,6 +61,7 @@ public class SanitizeCpp extends Sanitizer {
 			if(!(temp.contains("Student Name:") || temp.contains("namespace") || temp.toLowerCase().contains("program")  || temp.contains("cout"))){
 				temp = sanitizeForStudentName(temp);
 				temp = sanitizeForIO(temp);
+				temp = sanitizeForMain(temp);
 			}
 
 			file.add(temp);

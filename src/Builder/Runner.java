@@ -1,6 +1,7 @@
 package Builder;
 
 import GUI.MainFrame;
+import sun.applet.Main;
 
 import javax.swing.*;
 import java.io.BufferedReader;
@@ -15,9 +16,10 @@ public class Runner {
 
     private static void waitFor(Process process, int limit) {
         long start = System.currentTimeMillis();
-        while(process.isAlive() && System.currentTimeMillis() - start < limit);
+        while (process.isAlive() && System.currentTimeMillis() - start < limit) ;
     }
-    private static BufferedReader runExecutableProcess (String fileName) {
+
+    private static BufferedReader runExecutableProcess(String fileName) {
         BufferedReader reader = null;
         try {
             ProcessBuilder processBuilder;
@@ -29,19 +31,20 @@ public class Runner {
 
             process.destroy();
             process.waitFor(); // wait for the process to terminate
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "I am sorry, but I could not run the process you asked me to.  Here is some more details.\n" + e);
         }
         return reader;
     }
-    public static String runAndGetResults(String fileName) {
+
+    public static String runAndGetResults(MainFrame context, String fileName) {
         String results = "";
         try {
             BufferedReader reader = Runner.runExecutableProcess(fileName);
             results = getResults(reader);
-        } catch(Exception e) {
-            JOptionPane.showMessageDialog(null, "I am sorry, but I could not get the output of the process like you asked me to.  " +
+            reader.close();
+        } catch (Exception e) {
+            context.displayError("I am sorry, but I could not get the output of the process like you asked me to.  " +
                     "Here is some more details.\n" + e);
         }
         return results;
@@ -61,15 +64,14 @@ public class Runner {
     public static void compile(MainFrame context) {
         String[] studentList = context.getStudentList();
         String compilerPref = context.config.getCompilerPreference();
-        if(!compilerPref.equals("Runnable")){
+        if (!compilerPref.equals("Runnable")) {
             context.displayMessage("I am going to start the compilation step now... this is going to take a good amount of time.  " +
                     "I apologize in advance, but please just be patient, I will let you know when it's done!");
-        }
-        else {
+        } else {
             context.displayMessage("I am going to start the compilation step now... this might take a few moments...");
         }
 
-        for(int i = 0; i < studentList.length; i++) {
+        for (int i = 0; i < studentList.length; i++) {
             String labPath = context.config.getStudentInputPath() + "Lab" + context.config.getLabNumber() + "/" + studentList[i];
             switch (compilerPref) {
                 case "Both":
@@ -90,6 +92,7 @@ public class Runner {
             }
         }
     }
+
     private static void compileForRunning(MainFrame context, String labPath) {
         String outputName = "runnable" + context.config.getUnitTestExeName();
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labPath + "/lab.cpp", "-o", outputName);
@@ -107,6 +110,7 @@ public class Runner {
         proc.directory(new File(labPath));
         runProcess(context, proc);
     }
+
     private static void runProcess(MainFrame context, ProcessBuilder compileProcess) {
         try {
             Process process = compileProcess.start();
@@ -120,6 +124,7 @@ public class Runner {
             if(!errors.isEmpty()) {
                 context.displayError("I found some errors while compiling... here's what happened:\n\n" + errors);
             }
+            reader.close();
         } catch (Exception e) {
             context.displayError("I am sorry, but something went really wrong while trying to compile that file for you.  " +
                     "Here are some more details:\n" + e);

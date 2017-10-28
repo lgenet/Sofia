@@ -94,10 +94,18 @@ public class LabManager implements GraderEvent {
             System.out.println(current.getUnitTestResults());
             return;
         }
-        System.out.println("Running unit tests...");
+        String fileName;
+        if(context.config.getCompilerPreference().equals("UnitTest")) {
+            System.out.println("Running unit tests...");
+            fileName = "unitTest" + context.config.getUnitTestExeName();
+        }
+        else {
+            System.out.println("Running the lab...");
+            fileName = "runnable" + context.config.getUnitTestExeName();
+        }
         String studentExePath = context.config.getStudentInputPath() + "Lab" + context.config.getLabNumber() + "/"
-                + current.getStudentName() + "/" + context.config.getUnitTestExeName();
-        String results = Runner.runAndGetResults(studentExePath);
+                + current.getStudentName() + "/" + fileName;
+        String results = Runner.runAndGetResults(context, studentExePath);
         current.setUnitTestResult(new TestResult(results));
         System.out.println(current.getUnitTestResults());
     }

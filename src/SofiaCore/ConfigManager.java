@@ -19,6 +19,7 @@ public class ConfigManager implements Serializable {
     private boolean autoSanitize;       // Will automatically perform sanitize action without prompting the user
     private boolean canAutoContinue;    // Will automatically go to the next lab after one is graded
     private boolean runTestOnSwitch;    // will run the test as soon as the next (or previous) lab is loaded
+    private boolean debugMode;          // Will allow debug messages to print
 
     private int labNumber;              // The current Lab number
     private String inputFile;           // The name of the input file to be copied into each submission folder
@@ -55,7 +56,8 @@ public class ConfigManager implements Serializable {
                 + "canAutoContinue = " + canAutoContinue + "\n"
                 + "runTestOnSwitch = " + runTestOnSwitch + "\n"
                 + "labNumber = " + labNumber + "\n"
-                + "inputFile = " + inputFile + "\n";
+                + "inputFile = " + inputFile + "\n"
+                + "debugMode = " + debugMode + "\n";
     }
     public void writeConfig() {
         try {
@@ -167,5 +169,13 @@ public class ConfigManager implements Serializable {
 
     public void setCompilerPreference(String compilerPreference) {
         this.compilerPreference = compilerPreference;
+    }
+
+    public boolean isDebugMode() {
+        return debugMode;
+    }
+
+    public void setDebugMode(boolean debugMode) {
+        this.debugMode = debugMode;
     }
 }

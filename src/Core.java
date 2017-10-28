@@ -34,6 +34,7 @@ public class Core extends JPanel {
         ConfigManager cm = getConfig();
         String[] studentList = {"logan", "kristy", "addison"};
 
+        JOptionPane.showMessageDialog(null, "You are currently running a debug build.");
         if(!cm.getStudentListPath().equals("")) {
             studentList = FileLoader.loadStudentList(new File(cm.getStudentListPath()));
         }
@@ -48,7 +49,6 @@ public class Core extends JPanel {
             System.out.println("Good day my name is Sofia, and I am here to be you guide.");
         }
 
-        // TODO: Prompt before starting grade
         // TODO: Make run unit tests and auto apply those graded points
     }
 }

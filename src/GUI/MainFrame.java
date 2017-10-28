@@ -129,6 +129,11 @@ public class MainFrame extends JFrame {
     public void displayMessage(String message, String title) {
         JOptionPane.showMessageDialog(null, message, title, JOptionPane.INFORMATION_MESSAGE);
     }
+    public void displayDebugMessage(String message) {
+        if(this.config.isDebugMode()){
+            JOptionPane.showMessageDialog(null, "DEBUG: " + message, "DEBUG - SOFIA - DEBUG", JOptionPane.WARNING_MESSAGE);
+        }
+    }
     public void shutDown() {
         config.writeConfig();
         System.exit(0);

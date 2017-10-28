@@ -52,7 +52,7 @@ public class Sanitizer {
         return new ArrayList<String>();
     }
     protected static boolean askToChange(String line, String suggested) {
-        if(autoSanitize) {
+        if(autoSanitize || suggested.equals(line)) {
             return true;
         }
         int res = JOptionPane.showConfirmDialog(null, "Do you want me to change:\n" +
