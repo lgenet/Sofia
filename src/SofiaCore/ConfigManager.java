@@ -28,7 +28,7 @@ public class ConfigManager implements Serializable {
         studentListPath = "";
         studentInputPath = "./Inputs/";
         studentGradePath = "./Grades/";
-        labRubricPath= "./rubrics/";
+        labRubricPath= "./Resources/rubrics/";
 
         unitTestExeName = "lab.exe";
         languageExt = ".cpp";

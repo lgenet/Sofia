@@ -16,7 +16,7 @@ public class LabPanel extends JPanel {
     }
     private void init(){
         labView = new JTextArea("I am the lab document");
-        labView.setColumns(50);
+        labView.setColumns(75);
         labView.setFont(labView.getFont().deriveFont(14f)); // will only change size to 12pt
         labView.setBorder(new EmptyBorder(10, 10, 10, 10));
 
@@ -26,7 +26,7 @@ public class LabPanel extends JPanel {
         this.setLayout(new BorderLayout());
         this.add(new JLabel("Lab Window"), BorderLayout.NORTH);
         this.add(js, BorderLayout.CENTER);
-        this.setSize(800, 200);
+        this.setSize(400,800);
     }
 
     public void setLabView(String lab) {

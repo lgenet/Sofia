@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class SanitizeCpp extends Sanitizer {
 
 	private static String sanitizeForStudentName(String current) {
-		if(!current.toLowerCase().contains("name")){
+		if(!current.toLowerCase().contains("name") || !current.toLowerCase().contains("//")){
 			return current;
 		}
 		String suggested = current.replaceAll(":", "");
