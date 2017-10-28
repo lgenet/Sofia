@@ -34,7 +34,9 @@ public class Core extends JPanel {
         ConfigManager cm = getConfig();
         String[] studentList = {"logan", "kristy", "addison"};
 
-        JOptionPane.showMessageDialog(null, "You are currently running a debug build.");
+        if(cm.isDebugMode()){
+            JOptionPane.showMessageDialog(null, "You are currently running a debug build.");
+        }
         if(!cm.getStudentListPath().equals("")) {
             studentList = FileLoader.loadStudentList(new File(cm.getStudentListPath()));
         }

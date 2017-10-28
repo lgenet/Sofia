@@ -1,7 +1,6 @@
 package Builder;
 
 import GUI.MainFrame;
-import sun.applet.Main;
 
 import javax.swing.*;
 import java.io.BufferedReader;
@@ -16,7 +15,7 @@ public class Runner {
 
     private static void waitFor(Process process, int limit) {
         long start = System.currentTimeMillis();
-        while (process.isAlive() && System.currentTimeMillis() - start < limit) ;
+        while (process.isAlive() && System.currentTimeMillis() - start < limit);
     }
 
     private static BufferedReader runExecutableProcess(String fileName) {
@@ -52,7 +51,7 @@ public class Runner {
 
     private static String getResults(BufferedReader reader) throws IOException {
         String line, results = "";
-        while ((line = reader.readLine()) != null) {
+        while (reader.ready() && (line = reader.readLine()) != null) {
             results += line + "\n";
         }
         return results;
@@ -94,18 +93,19 @@ public class Runner {
     }
 
     private static void compileForRunning(MainFrame context, String labPath) {
-        String outputName = "runnable" + context.config.getUnitTestExeName();
-        ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labPath + "/lab.cpp", "-o", outputName);
+        String labName = labPath + "/lab.cpp";
+        String outputName = labPath + "/runnable" + context.config.getUnitTestExeName();
+        ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labName, "-o", outputName);
         runProcess(context, proc);
     }
 
     public static void compileForUnitTest(MainFrame context, String labPath) {
         //g++ -std=c++14 -isystem ../../googletest/googletest/include -pthread ./lab_test.cpp  ../../libgtest.a
-        String outputName = "unitTest" + context.config.getUnitTestExeName();
-        String testFile = "./lab_test.cpp";
+        String outputName = labPath + "/unitTest" + context.config.getUnitTestExeName();
+        String testFile = labPath + "/lab_test.cpp";
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), "-std=c++14", "-isystem",
-                "../../../Resources/googletest/include", "-pthread",
-                "../../../Resources/libgtest.a",
+                "./Resources/googletest/include", "-pthread",
+                "./Resources/libgtest.a",
                 testFile, "-o", outputName);
         proc.directory(new File(labPath));
         runProcess(context, proc);
@@ -113,6 +113,7 @@ public class Runner {
 
     private static void runProcess(MainFrame context, ProcessBuilder compileProcess) {
         try {
+            compileProcess.directory(new File("./"));
             Process process = compileProcess.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 
@@ -120,6 +121,7 @@ public class Runner {
 
             process.destroy();
             process.waitFor(); // wait for the process to terminate
+
             String errors = getResults(reader);
             if(!errors.isEmpty()) {
                 context.displayError("I found some errors while compiling... here's what happened:\n\n" + errors);

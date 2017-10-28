@@ -6,28 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="674d6eac-f29b-4fcd-8c23-883086bf0bc3" name="Default" comment="Pass 2 of building the Sofia Grader as a java application">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" afterPath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Core.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Core.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/LabManager.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/LabPanel.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/LabPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame.class" />
-      <change type="MODIFICATION" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\Builder\Runner.class" afterPath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\Builder\Runner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab1.exe" afterPath="$PROJECT_DIR$/lab1.exe" />
+    <list default="true" id="674d6eac-f29b-4fcd-8c23-883086bf0bc3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sofia.jar" afterPath="$PROJECT_DIR$/sofia.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" afterPath="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" afterPath="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core.java" afterPath="$PROJECT_DIR$/src/Core.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/LabManager.java" afterPath="$PROJECT_DIR$/src/Lab/LabManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/LabPanel.java" afterPath="$PROJECT_DIR$/src/GUI/LabPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainFrame.java" afterPath="$PROJECT_DIR$/src/GUI/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Builder/Runner.java" afterPath="$PROJECT_DIR$/src/Builder/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" afterPath="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sanitizer/Sanitizer.java" afterPath="$PROJECT_DIR$/src/Sanitizer/Sanitizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ser" afterPath="$PROJECT_DIR$/config.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extraction-errors.log" afterPath="$PROJECT_DIR$/extraction-errors.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sofia.iws" />
@@ -54,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/Core.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +72,8 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7843803">
-              <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.29881155">
+              <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#compile#0;class#Runner#0" expanded="false" />
@@ -185,6 +167,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="java-app-v2" target-remote="origin" target-branch="java-app-v2-exp" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -666,7 +651,13 @@
       <option name="project" value="LOCAL" />
       <updated>1508807053538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Experimental">
+      <created>1509149648814</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509149648815</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -722,7 +713,8 @@
     <confirmMoveToFailedCommit value="1" />
     <MESSAGE value="Pass 2 of building the Sofia Grader as a java application" />
     <MESSAGE value="Published JAR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Published JAR" />
+    <MESSAGE value="Experimental" />
+    <option name="LAST_COMMIT_MESSAGE" value="Experimental" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -969,6 +961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1159,7 @@
     <entry file="file://$PROJECT_DIR$/src/Core.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1175,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7843803">
-          <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.29881155">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#compile#0;class#Runner#0" expanded="false" />
