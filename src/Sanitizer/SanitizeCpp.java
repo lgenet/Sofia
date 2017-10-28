@@ -46,7 +46,7 @@ public class SanitizeCpp extends Sanitizer {
 		if(!current.contains("int main")) {
 			return current;
 		}
-		String suggested = "int lab()";
+		String suggested = current.replaceAll("int main", "int lab");
 
 		if(askToChange(current, suggested)) {
 			return suggested;
@@ -54,14 +54,16 @@ public class SanitizeCpp extends Sanitizer {
 		return current;
 	}
 
-	protected static ArrayList<String> replaceTokens(BufferedReader fin) throws IOException {
+	protected static ArrayList<String> replaceTokens(BufferedReader fin, boolean isTestSubject) throws IOException {
 		ArrayList<String> file = new ArrayList<String>();
 		String temp = fin.readLine();
 		while(temp != null){
 			if(!(temp.contains("Student Name:") || temp.contains("namespace") || temp.toLowerCase().contains("program")  || temp.contains("cout"))){
 				temp = sanitizeForStudentName(temp);
 				temp = sanitizeForIO(temp);
-				temp = sanitizeForMain(temp);
+				if(isTestSubject){
+					temp = sanitizeForMain(temp);
+				}
 			}
 
 			file.add(temp);

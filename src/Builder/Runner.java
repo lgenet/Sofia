@@ -93,21 +93,24 @@ public class Runner {
     }
 
     private static void compileForRunning(MainFrame context, String labPath) {
-        String labName = labPath + "/lab.cpp";
-        String outputName = labPath + "/runnable" + context.config.getUnitTestExeName();
+        String labName = new File(labPath + "/lab.cpp").toString();
+        String outputName = new File(labPath + "/runnable" + context.config.getUnitTestExeName()).toString();
+        context.displayDebugMessage("Compiling runnable at " + labName + "\nTO\n" + outputName);
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labName, "-o", outputName);
         runProcess(context, proc);
     }
 
     public static void compileForUnitTest(MainFrame context, String labPath) {
         //g++ -std=c++14 -isystem ../../googletest/googletest/include -pthread ./lab_test.cpp  ../../libgtest.a
-        String outputName = labPath + "/unitTest" + context.config.getUnitTestExeName();
-        String testFile = labPath + "/lab_test.cpp";
+        String outputName = new File(labPath + "/unitTest" + context.config.getUnitTestExeName()).toString();
+        String testFile = new File(labPath + "/lab_test.cpp").toString();
+        context.displayDebugMessage("Compiling runnable at " + testFile + "\nTO\n" + outputName);
+
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), "-std=c++14", "-isystem",
                 "./Resources/googletest/include", "-pthread",
                 "./Resources/libgtest.a",
                 testFile, "-o", outputName);
-        proc.directory(new File(labPath));
+        proc.directory(new File(labPath)); // TODO: Evaluate this shit
         runProcess(context, proc);
     }
 

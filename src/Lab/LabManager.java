@@ -16,7 +16,7 @@ public class LabManager implements GraderEvent {
 
     public LabManager(String[] sl, int lp) {
         currentIndex = -1;
-        studentList = sl;
+        setStudentListAction(sl);
         latePenalty = lp;
     }
 
@@ -26,8 +26,14 @@ public class LabManager implements GraderEvent {
         listOfLabs = LabLoader.buildLabLists(context, studentList, labRubricPath, latePenalty);
     }
 
-    public void setStudentList(String[] list) {
+    private void setStudentListAction(String[] list) {
         studentList = list;
+        for(int i = 0; i < studentList.length; i++){
+            studentList[i] = studentList[i].replaceAll(" ", "_");
+        }
+    }
+    public void setStudentList(String[] list) {
+        setStudentListAction(list);
         rebuildLabs();
     }
     public String[] getStudentList() {

@@ -32,7 +32,7 @@ public class Core extends JPanel {
     // TODO: build tab view that will show all lab files not just the first one
     public static void main(String args[]) {
         ConfigManager cm = getConfig();
-        String[] studentList = {"logan", "kristy", "addison"};
+        String[] studentList = {"logan", "kristy", "jane doe", "addison"};
 
         if(cm.isDebugMode()){
             JOptionPane.showMessageDialog(null, "You are currently running a debug build.");

@@ -21,6 +21,10 @@ public class Extractor {
 
     private static MainFrame context;
 
+    private static int unknownCount = 0;    // TODO: make this not gross
+    private static int labCount = 0;        // TODO: Do something better here
+    private static int labTestCount = 0;    // TODO: Do something better here too
+
     public static void setContext (MainFrame mf) {
         context = mf;
         initPaths();
@@ -51,9 +55,6 @@ public class Extractor {
         return logFilePath;
     }
 
-    private static int unknownCount = 0;// TODO: make this not gross
-    private static int labCount = 0;    // TODO: Do something better here
-
     private static String getStudentNameFromFile(File current) {
         String[] nameParts = current.getName().split("-");
         String studentName = "UNKNOWN_" + unknownCount;
@@ -63,20 +64,25 @@ public class Extractor {
         else {
             unknownCount++;
         }
-        return studentName.trim();
+        return studentName.trim().replaceAll(" ", "_");
     }
     private static String getFileNameForCondenser(Path p) {
         String fileName = "" + p.getFileName();
         String languageExt = context.config.getLanguageExt();
         if(fileName.indexOf(languageExt) != -1) {
-            if(labCount == 0) {
-                fileName = "lab" + languageExt;
-            }
-            else {
-                fileName = "lab" + (char) ('a' + labCount) + languageExt;
-            }
-            labCount++;
+            fileName = getLabName("lab", languageExt, labCount);
         }
+        return fileName;
+    }
+    private static String getLabName(String labName, String languageExt, Integer count) {
+        String fileName;
+        if(count == 0) {
+            fileName = labName + languageExt;
+        }
+        else {
+            fileName = labName + (char) ('a' + count) + languageExt;
+        }
+        count++;
         return fileName;
     }
 
@@ -97,9 +103,11 @@ public class Extractor {
     private static String condenseLabDirectory(String studentLabTemporaryPath, String studentName) throws IOException {
         labCount = 0;
         String finalStudentPath = getStudentLabDestinationPath() + "/" + studentName + "/";
+        String languageExt = context.config.getLanguageExt();
         Files.walk(Paths.get(studentLabTemporaryPath))
             .forEach((from) -> {
-                String fullPath = finalStudentPath + getFileNameForCondenser(from);
+                String fileName =  getFileNameForCondenser(from);
+                String fullPath = finalStudentPath + fileName;
                 Path to = Paths.get(fullPath);
 
                 if (!from.toFile().isDirectory()) {
@@ -107,6 +115,11 @@ public class Extractor {
 
                     try {
                         FileLoader.copyFile(from, to);
+                        if(fileName.contains("lab") && fileName.contains(languageExt)) {
+                            String labTestPath = getLabName("lab_for_testing", languageExt, labTestCount);
+                            Path toDuplicateLab = Paths.get(finalStudentPath + labTestPath);
+                            FileLoader.copyFile(from, toDuplicateLab);
+                        }
                     } catch (IOException e) {
                         writeToLog(from, to);
                         context.displayMessage("I am sorry but, I could not copy a file from its temporary location to its final " +
