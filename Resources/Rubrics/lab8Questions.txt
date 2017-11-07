@@ -1,0 +1,22 @@
+Code follows formatting guidelines
+Header | Header | 5
+Purpose | Purpose | 2
+Indentation | Indentation | 4
+Good Practices | Follows good coding standards | 5 // Next time will be for no globals
+unneeded Includes | Does not include unneeded #includes | 1
+
+|||Program functions correctly
+Reads in Data | Had function to read in data to array | 10
+Closed fin | Correctly handled files by closing fin | 3
+get average returns a double | Calculated the average and returned a double | 5
+get average returns correct value | Correctly calculated average | 7
+printed table header | Printed the table header correctly | 4
+printed table body | Printed the table body correctly | 8
+got the min value | Found the minimum value in the array | 4
+got the min position | Found the minimum value's position in the array | 4
+used linear search for min | Used linear searching to find the min value | 5
+got the maxvalue | Found the maximum value in the array | 4
+got the max position | Found the maximum value's position in the array | 4
+used linear search for max | Used linear searching to find the max value | 5
+Sort Descending | Correctly sorted the array in descending order | 9
+Print in a row | Print numbers in a row | 6
