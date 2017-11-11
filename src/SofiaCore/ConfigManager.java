@@ -38,6 +38,7 @@ public class ConfigManager implements Serializable {
         autoSanitize = false;
         canAutoContinue = false;
         runTestOnSwitch = false;
+        debugMode = false;
 
         labNumber = 1;
         inputFile = "";

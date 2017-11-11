@@ -98,7 +98,7 @@ public class Runner {
         context.displayDebugMessage("Compiling runnable at " + labName + "\nTO\n" + outputName);
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labName, "-o", outputName);
         if(!runProcess(context, proc)) {
-            System.out.println("Failed to compile: " + labPath);
+            context.displayError("I am sorry, but I could not compile the lab document for " + labPath);
         }
     }
 
@@ -106,15 +106,19 @@ public class Runner {
         //g++ -std=c++14 -isystem ../../googletest/googletest/include -pthread ./lab_test.cpp  ../../libgtest.a
         String outputName = new File(labPath + "/unitTest" + context.config.getUnitTestExeName()).toString();
         String testFile = new File(labPath + "/lab_test.cpp").toString();
-        context.displayDebugMessage("Compiling runnable at " + testFile + "\nTO\n" + outputName);
+        context.displayDebugMessage("Compiling unit test at " + testFile + "\nTO\n" + outputName);
+
+        String googleTestResourcePath = new File("Resources/googletest/include").getAbsolutePath();
+        String libgtestPath = new File("Resources/libgtest.a").getAbsolutePath();
 
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), "-std=c++14", "-isystem",
-                "./Resources/googletest/include", "-pthread",
-                "./Resources/libgtest.a",
-                testFile, "-o", outputName);
-        proc.directory(new File(labPath)); // TODO: Evaluate this shit
+                googleTestResourcePath, "-pthread",
+                testFile,
+                libgtestPath,
+                 "-o", outputName);
+        proc.directory(new File(labPath));
         if(!runProcess(context, proc)) {
-            System.out.println("Failed to compile: " + labPath);
+            context.displayError("I am sorry, but I could not compile unit tests for " + labPath);
         }
     }
 

@@ -133,6 +133,9 @@ public class MainFrame extends JFrame {
             JOptionPane.showMessageDialog(null, "DEBUG: " + message, "DEBUG - SOFIA - DEBUG", JOptionPane.WARNING_MESSAGE);
         }
     }
+    public String getInputMessage(String message) {
+        return JOptionPane.showInputDialog(null, message, "Sofia - Question", JOptionPane.QUESTION_MESSAGE);
+    }
     public void shutDown() {
         config.writeConfig();
         System.exit(0);

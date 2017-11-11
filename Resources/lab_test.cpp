@@ -309,5 +309,5 @@ int main(int argsc, char **argv) {
 }
 
 /*TO Run
- g++ -std=c++14 -isystem ./googletest/googletest/include -pthread ./lab_9_test.cpp ./libgtest.a 
+ g++ -std=c++14 -isystem ./googletest/include -pthread ./lab_test.cpp ./libgtest.a 
 */

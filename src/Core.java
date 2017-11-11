@@ -34,6 +34,11 @@ public class Core extends JPanel {
         ConfigManager cm = getConfig();
         String[] studentList = {"logan", "kristy", "jane doe", "addison"};
 
+        File f = new File("");
+        String googleTestResourcePath = new File("Resources/googletest/include").getAbsolutePath();
+        String libgtestPath = new File("Resources/libgtest.a").getAbsolutePath();
+        JOptionPane.showMessageDialog(null, "Paths: \nGoogle:" +googleTestResourcePath +"\nLibG: " + libgtestPath);
+        JOptionPane.showMessageDialog(null, f.getAbsolutePath());
         if(cm.isDebugMode()){
             JOptionPane.showMessageDialog(null, "You are currently running a debug build.");
         }

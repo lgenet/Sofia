@@ -22,11 +22,14 @@ public class FileMenu extends Menu {
         context = mf;
 
         this.add(initStudentListPicker());
+        this.addSeparator();
         this.add(initMasterPrepare());
+        this.addSeparator();
         this.add(initExtractZip());
         this.add(initSanitizer());
         this.add(initCompiler());
         this.add(initCleanupFiles());
+        this.addSeparator();
         this.add(initExitMenu());
     }
 
@@ -62,14 +65,21 @@ public class FileMenu extends Menu {
     private MenuItem initMasterPrepare() {
         MenuItem master = new MenuItem("Prepare Labs");
         master.addActionListener(e -> {
-            String labNumber = JOptionPane.showInputDialog(null, "What lab do you want me to prepare for you?",
-                    "Sofia - Enter Lab Number", JOptionPane.QUESTION_MESSAGE);
+            String labNumber = context.getInputMessage("What lab do you want me to prepare for you?");
             int labNum = context.config.getLabNumber();
-            labNum = Integer.parseInt(labNumber);
+            try{
+                labNum = Integer.parseInt(labNumber);
+            }catch(Exception ex) {
+                context.displayDebugMessage("I am sorry, but parsing the integer |" + labNumber + "| failed.  Exception: " + ex);
+                labNum = context.config.getLabNumber();
+            }
             context.config.setLabNumber(labNum);
             runExtractTasks();
+            context.displayMessage("Okay... now I just need to sanitize the lab documents...");
             runSanitizeTasks();
+            context.displayMessage("woo, done with sanitization, now just to clean up any remaining garbage....");
             Extractor.cleanupTmpFiles();
+            context.displayMessage("Okay!  Thank you for being patient with me!  I am done preparing your labs for you!");
         });
         return master;
     }
@@ -124,14 +134,17 @@ public class FileMenu extends Menu {
     private void runExtractTasks() {
         JFileChooser fc = context.getFileChooser();
         fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        fc.setFileFilter(new FileNameExtensionFilter("Zip Files", "zip"));
+        FileNameExtensionFilter fnef = new FileNameExtensionFilter("Zip Files", "zip");
+        fc.setFileFilter(fnef);
         int returnVal = fc.showOpenDialog(fc);
 
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             try {
                 JOptionPane.showMessageDialog(null, "Okay, this might take a few moments... Please be patient with me! " +
                         "I will let you know when I am done extracting the Lab data");
-                Extractor.extract(fc.getSelectedFile(), context);
+                File selected = fc.getSelectedFile();
+                fc.removeChoosableFileFilter(fnef);
+                Extractor.extract(selected, context);
                 JOptionPane.showMessageDialog(null, "Done extraction... now just updating my registry of labs...");
                 context.rebuildLabs();
                 JOptionPane.showMessageDialog(null, "Okay!  All done with the extraction and Document Building.  Sorry for the delay!");

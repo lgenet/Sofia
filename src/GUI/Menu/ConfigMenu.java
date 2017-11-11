@@ -1,13 +1,10 @@
 package GUI.Menu;
 
-import Builder.Extractor;
 import Builder.FileLoader;
 import GUI.MainFrame;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -21,18 +18,23 @@ public class ConfigMenu extends Menu {
         super("Config");
         this.context = context;
         this.add(initDebugMode());
-        this.add(initGetLibgFile());
+        this.addSeparator();
         this.add(initSetLabNumber());
         this.add(initSetInputFile());
         this.add(initUnitTestExeName());
+        this.addSeparator();
         this.add(initSetAutoContinue());
         this.add(initSetAutoSanitize());
         this.add(initSetRunTestOnSwitch());
+        this.addSeparator();
+        this.add(initSetCompilerPrefs());
+        this.add(initSetCPPCompiler());
+        this.addSeparator();
         this.add(initSetInputPaths());
         this.add(initSetGradePath());
         this.add(initSetRubricPath());
-        this.add(initSetCompilerPrefs());
-        this.add(initSetCPPCompiler());
+        this.add(initLanguageExt());
+        this.add(initGetLibgFile());
     }
 
     private MenuItem initSetInputPaths() {
@@ -68,8 +70,16 @@ public class ConfigMenu extends Menu {
     private MenuItem initUnitTestExeName() {
         MenuItem setExeName = new MenuItem("Set executable extension");
         setExeName.addActionListener(e -> {
-            String s = JOptionPane.showInputDialog(null, "What is the name of the executable file? (lab.exe or a.out etc)");
+            String s = context.getInputMessage("What is the name of the executable file? (lab.exe or a.out etc)");
             context.config.setUnitTestExeName(s);
+        });
+        return setExeName;
+    }
+    private MenuItem initLanguageExt() {
+        MenuItem setExeName = new MenuItem("Set Programming Language");
+        setExeName.addActionListener(e -> {
+            String s = context.getInputMessage( "What is type of file should I look for (.cpp, .java, .py, etc)");
+            context.config.setLanguageExt(s);
         });
         return setExeName;
     }
@@ -94,7 +104,7 @@ public class ConfigMenu extends Menu {
                     break;
                 case 3:
                     String curr = context.config.getCompilerPreference();
-                    context.displayMessage("Oh, okay I wont change your preference!  I will continue to to compile with " + curr);
+                    context.displayMessage("Oh, okay I wont change your preference!  I will continue to compile with " + curr);
                     break;
             }
         });
@@ -106,7 +116,7 @@ public class ConfigMenu extends Menu {
             context.config.setDebugMode(!context.config.isDebugMode());
             if(context.config.isDebugMode()){
                 context.displayMessage("okay!  You are now running in debug mode!  These messages will appear slightly different... " +
-                    "They also might not sound like me, but they should provide additional diagnostic info");
+                    "They also might not sound like me, but they should provide additional diagnostic info...");
             }
             else {
                 context.displayMessage("Okay!  I wont show you those pesky debug messages anymore.");
@@ -117,6 +127,9 @@ public class ConfigMenu extends Menu {
     private MenuItem initGetLibgFile() {
         MenuItem libG = new MenuItem("Select libgtest.a file");
         libG.addActionListener(e -> {
+            context.displayMessage("Okay, this one might be hard to explain but... I need a Lib gTest file to be able to run unit tests.\n" +
+                    "If you would be so kind as to point me to where one is, I can record it in my memory for future use.  I am going to let you" +
+                    " pick where it is in just a moment.");
             String libGPath = context.getPath(false);
             try {
                 FileLoader.copyFile(libGPath, "./Resources/libgtest.a");
@@ -175,10 +188,10 @@ public class ConfigMenu extends Menu {
         MenuItem setLabNumber = new MenuItem("Set lab number");
         setLabNumber.addActionListener(e -> {
             try {
-                String s = JOptionPane.showInputDialog(null, "When I grow up, I will generate a message report");
+                String s = JOptionPane.showInputDialog(null, "Please enter the lab number you wish for me to consider.");
                 context.config.setLabNumber(Integer.parseInt(s));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, "Failed to set lab number to " + ex);
+                context.displayError("I am sorry but I could not set the lab number for you, here is some more info:\n" + ex);
             }
 
         });
@@ -187,7 +200,7 @@ public class ConfigMenu extends Menu {
     private MenuItem initSetInputFile() {
         MenuItem setLabNumber = new MenuItem("Set Input File");
         setLabNumber.addActionListener(e -> {
-            String s = JOptionPane.showInputDialog(null, "What input file do you want to use? (leave empty for none)");
+            String s = context.getInputMessage("What input file do you want to use? (leave empty for none)");
             context.config.setInputFile(s);
         });
         return setLabNumber;
