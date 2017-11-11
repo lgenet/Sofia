@@ -97,7 +97,9 @@ public class Runner {
         String outputName = new File(labPath + "/runnable" + context.config.getUnitTestExeName()).toString();
         context.displayDebugMessage("Compiling runnable at " + labName + "\nTO\n" + outputName);
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labName, "-o", outputName);
-        runProcess(context, proc);
+        if(!runProcess(context, proc)) {
+            System.out.println("Failed to compile: " + labPath);
+        }
     }
 
     public static void compileForUnitTest(MainFrame context, String labPath) {
@@ -111,10 +113,12 @@ public class Runner {
                 "./Resources/libgtest.a",
                 testFile, "-o", outputName);
         proc.directory(new File(labPath)); // TODO: Evaluate this shit
-        runProcess(context, proc);
+        if(!runProcess(context, proc)) {
+            System.out.println("Failed to compile: " + labPath);
+        }
     }
 
-    private static void runProcess(MainFrame context, ProcessBuilder compileProcess) {
+    private static boolean runProcess(MainFrame context, ProcessBuilder compileProcess) {
         try {
             compileProcess.directory(new File("./"));
             Process process = compileProcess.start();
@@ -130,9 +134,11 @@ public class Runner {
                 context.displayError("I found some errors while compiling... here's what happened:\n\n" + errors);
             }
             reader.close();
+            return true;
         } catch (Exception e) {
             context.displayError("I am sorry, but something went really wrong while trying to compile that file for you.  " +
                     "Here are some more details:\n" + e);
+            return false;
         }
     }
 }

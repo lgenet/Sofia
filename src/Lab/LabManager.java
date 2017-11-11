@@ -22,7 +22,7 @@ public class LabManager implements GraderEvent {
 
     public void setContext(MainFrame c) {
         context = c;
-        String labRubricPath = context.config.getLabRubricPath() + "lab" + context.config.getLabNumber() + "Questions.txt";
+        String labRubricPath = context.config.getLabRubricPath() + "/lab" + context.config.getLabNumber() + "Questions.txt";
         listOfLabs = LabLoader.buildLabLists(context, studentList, labRubricPath, latePenalty);
     }
 

@@ -3,6 +3,7 @@ package Lab;
 import GUI.MainFrame;
 import sun.applet.Main;
 
+import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
@@ -68,14 +69,16 @@ public class Lab {
         unitTestResult = tr;
     }
 
+
     public void saveToFile(MainFrame context) {
         try {
-            String gradePath = context.config.getStudentGradePath() + "Lab" + labNumber + "/" + studentName + "-Grade.txt";
+            String gradePath = context.config.getStudentGradePath() + "/Lab" + labNumber + "/" + studentName + "-Grade.txt";
+            new File(gradePath).getParentFile().mkdirs();
             PrintWriter writer = new PrintWriter(gradePath, "UTF-8");
             writer.println(this);
             writer.close();
         } catch (Exception e) {
-            System.out.println("Something went wrong while trying to save " + studentName + "'s grade. " + e);
+            context.displayError("Something went wrong while trying to save " + studentName + "'s grade. " + e);
         }
     }
 

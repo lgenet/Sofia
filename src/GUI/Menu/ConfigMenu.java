@@ -26,6 +26,7 @@ public class ConfigMenu extends Menu {
         this.add(initSetInputFile());
         this.add(initUnitTestExeName());
         this.add(initSetAutoContinue());
+        this.add(initSetAutoSanitize());
         this.add(initSetRunTestOnSwitch());
         this.add(initSetInputPaths());
         this.add(initSetGradePath());
@@ -138,6 +139,20 @@ public class ConfigMenu extends Menu {
         });
 
         return setAutoContinue;
+    }
+    private MenuItem initSetAutoSanitize() {
+        MenuItem setAutoSanitize = new MenuItem("Auto Sanitize On/Off");
+        setAutoSanitize.addActionListener(e -> {
+            context.config.setAutoSanitize(!context.config.isAutoSanitize());
+            if(context.config.isAutoSanitize()) {
+                JOptionPane.showMessageDialog(null, "Okay, I will go ahead and sanitize the labs for you!  Im glad you have this much faith in me!");
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "Okay, I will not change a thing during sanitization and will ask you before every move.");
+            }
+        });
+
+        return setAutoSanitize;
     }
     private MenuItem initSetRunTestOnSwitch() {
         MenuItem setRunTestOnSwitch = new MenuItem("Run Unit test on lab next/prev");

@@ -26,7 +26,7 @@ public class LabPanel extends JPanel {
         this.setLayout(new BorderLayout());
         this.add(new JLabel("Lab Window"), BorderLayout.NORTH);
         this.add(js, BorderLayout.CENTER);
-        this.setSize(400,800);
+//        this.setSize(400,800);
     }
 
     public void setLabView(String lab) {

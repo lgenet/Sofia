@@ -3,12 +3,20 @@ package Sanitizer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 // TODO: Write sanitizers for the other languages
 // TODO: Revise this to look modular and support other languages
 // TODO: Create parent class, and then the other child language sanitizers
 // TODO: Move this all to a new package since there will be multiple sanitizers
 public class SanitizeCpp extends Sanitizer {
+
+	private static Map<String, String> requiredMethods = new HashMap<String, String>(){{
+		put("void readin", "void readData");
+		put("2", "two");
+		put("3", "three");
+	}};
 
 	private static String sanitizeForStudentName(String current) {
 		if(!current.toLowerCase().contains("name") || !current.toLowerCase().contains("//")){
@@ -53,6 +61,20 @@ public class SanitizeCpp extends Sanitizer {
 		}
 		return current;
 	}
+	private static boolean containsRqeuiredMethod(String current) {
+//		for(int i = 0; i < requiredMethods.length; i++) {
+//			if(current.contains(requiredMethods[i])) {
+//				return true;
+//			}
+//		}
+		return false;
+	}
+	private static String sanitizeMethods(String current) {
+		if(!containsRqeuiredMethod(current)){
+			return current;
+		}
+		return current;
+	}
 
 	protected static ArrayList<String> replaceTokens(BufferedReader fin, boolean isTestSubject) throws IOException {
 		ArrayList<String> file = new ArrayList<String>();
@@ -63,6 +85,7 @@ public class SanitizeCpp extends Sanitizer {
 				temp = sanitizeForIO(temp);
 				if(isTestSubject){
 					temp = sanitizeForMain(temp);
+//					temp = sanitizeMethods(temp);
 				}
 			}
 

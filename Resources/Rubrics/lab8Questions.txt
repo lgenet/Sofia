@@ -2,7 +2,7 @@ Code follows formatting guidelines
 Header | Header | 5
 Purpose | Purpose | 2
 Indentation | Indentation | 4
-Good Practices | Follows good coding standards | 5 // Next time will be for no globals
+Good Practices | Follows good coding standards | 5
 unneeded Includes | Does not include unneeded #includes | 1
 
 |||Program functions correctly

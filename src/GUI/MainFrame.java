@@ -33,21 +33,18 @@ public class MainFrame extends JFrame {
     }
 
     private JPanel getButtonPane() {
-        JPanel centerPane = new JPanel(new BorderLayout());
-        centerPane.setBorder(new EmptyBorder(15, 10, 0, 10));
+        JPanel buttonPane = new JPanel(new GridLayout(1,3,10,10));
+        buttonPane.setBorder(new EmptyBorder(15, 10, 0, 10));
 
         GradeButton gradeLab = new GradeButton(manager);
         NextButton nextLab = new NextButton(manager);
         PreviousButton previousLab = new PreviousButton(manager);
 
-        JPanel nextBackPane = new JPanel(new BorderLayout());
-        nextBackPane.add(previousLab, BorderLayout.NORTH);
-        nextBackPane.add(nextLab, BorderLayout.SOUTH);
+        buttonPane.add(previousLab);
+        buttonPane.add(gradeLab);
+        buttonPane.add(nextLab);
 
-        centerPane.add(gradeLab, BorderLayout.NORTH);
-        centerPane.add(nextBackPane, BorderLayout.SOUTH);
-
-        return centerPane;
+        return buttonPane;
     }
 
     private void init() {
@@ -55,10 +52,12 @@ public class MainFrame extends JFrame {
         consolePane = new ConsolePanel();
         labPane = new LabPanel();
         JPanel mainPane = new JPanel(new BorderLayout());
-        mainPane.add(labPane, BorderLayout.WEST);
-        mainPane.add(consolePane, BorderLayout.EAST);
+        JPanel centralPane = new JPanel(new GridLayout(1,2,10,10));
+        centralPane.add(labPane);
+        centralPane.add(consolePane);
 
-        mainPane.add(getButtonPane(), BorderLayout.CENTER);
+        mainPane.add(centralPane, BorderLayout.CENTER);
+        mainPane.add(getButtonPane(), BorderLayout.SOUTH);
 
         mainPane.setBorder(new EmptyBorder(10, 10, 10, 10));
         this.addWindowListener(new WindowAdapter() {
