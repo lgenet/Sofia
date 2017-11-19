@@ -55,13 +55,10 @@ public class ConsolePanel extends JPanel{
     private String getInputWorker() throws InterruptedException
     {
         final CountDownLatch latch = new CountDownLatch(2);
-        KeyEventDispatcher dispatcher = new KeyEventDispatcher() {
-            // Anonymous class invoked from EDT
-            public boolean dispatchKeyEvent(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER)
-                    latch.countDown();
-                return false;
-            }
+        KeyEventDispatcher dispatcher = e -> {
+            if (e.getKeyCode() == KeyEvent.VK_ENTER)
+                latch.countDown();
+            return false;
         };
         KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(dispatcher);
         latch.await();  // current thread waits here until countDown() is called

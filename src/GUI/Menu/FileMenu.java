@@ -55,7 +55,7 @@ public class FileMenu extends Menu {
                 } catch (Exception ex) {
                     context.displayError("I am sorry, but I could not load the student list that you asked for.  Here is some more info" + ex,
                             "Error Reading Student List");
-                    System.out.println("Error getting student list: " + ex);
+                    context.appendGradingScreenText("Error getting student list: " + ex);
                 }
             }
         });
@@ -77,8 +77,10 @@ public class FileMenu extends Menu {
             runExtractTasks();
             context.displayMessage("Okay... now I just need to sanitize the lab documents...");
             runSanitizeTasks();
-            context.displayMessage("woo, done with sanitization, now just to clean up any remaining garbage....");
+            context.displayMessage("Woo! Done with sanitization, now just to clean up any remaining garbage....");
             Extractor.cleanupTmpFiles();
+            context.displayMessage("Okay!  I am ready to start compiling the labs!");
+            Runner.compile(context);
             context.displayMessage("Okay!  Thank you for being patient with me!  I am done preparing your labs for you!");
         });
         return master;
@@ -87,7 +89,7 @@ public class FileMenu extends Menu {
         MenuItem cleanUp = new MenuItem("Clean up tmp files");
         cleanUp.addActionListener(e -> {
             context.displayMessage("Oh ya... Let me see here...");
-            Extractor.cleanupTmpFiles();
+            Extractor.cleanupTmpFiles(context);
             context.displayMessage("All done!  I removed all the old temporary files that " +
                     "were hanging around after the last extraction.");
         });
@@ -95,9 +97,7 @@ public class FileMenu extends Menu {
     }
     private MenuItem initExtractZip() {
         MenuItem extractLabMenu = new MenuItem("Extract Labs");
-        extractLabMenu.addActionListener(e -> {
-            runExtractTasks();
-        });
+        extractLabMenu.addActionListener(e -> runExtractTasks());
         return extractLabMenu;
     }
 
@@ -120,10 +120,8 @@ public class FileMenu extends Menu {
     private MenuItem initCompiler() {
         MenuItem compiler = new MenuItem("Compile Lab Tests");
         compiler.addActionListener(e -> {
-//            context.displayMessage("So I have here that you want me to compile for: " + context.config.getCompilePreference(), but I don't know the first thing about compilers!");
-
             Runner.compile(context); // TODO: make config setting
-            context.displayMessage("Done compiling");
+            context.displayMessage("Wooooo!  That was a lot of work!  But I am done compiling now.");
         });
         return compiler;
     }

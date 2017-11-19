@@ -84,12 +84,13 @@ public class Lab {
 
     public void grade(MainFrame context) {
         if (isGraded) {
-            System.out.println("This lab is already graded.\n");
-            System.out.println("Do you wish to re-grade it? Y/N");
-            String con = context.getInput();
+            String message = "This lab is already graded.\n" +
+                    "Do you wish to re-grade it?";
+            context.appendGradingScreenText(message);
+            boolean shouldRegrade = context.confirm(message);
 
-            if (!con.equalsIgnoreCase("y")) {
-                System.out.println("Skipping regrade...");
+            if (!shouldRegrade) {
+                context.appendGradingScreenText("Skipping regrade...");
                 return;
             }
             context.clearGradingScreen();
@@ -100,7 +101,7 @@ public class Lab {
             questionGroups.get(i).grade(context);
             score += questionGroups.get(i).getScore();
         }
-        System.out.println("Comments: ");
+        context.appendGradingScreenText("Comments: ");
         comments = context.getInput();
 
         postGradeActivities(context);
@@ -108,20 +109,20 @@ public class Lab {
 
     private void postGradeActivities(MainFrame context) {
         isGraded = true;
-        System.out.println(this);
+        context.appendGradingScreenText(this.toString());
         saveToFile(context);
     }
 
-    public void printStatus() {
+    public void printStatus(MainFrame context) {
         if (isGraded && !gradeWasFoundOnFile) {
-            System.out.println(this);
+            context.appendGradingScreenText(this.toString());
         } else if(isGraded && gradeWasFoundOnFile) {
-            System.out.println("This lab belongs to: " + studentName);
-            System.out.println("\nA grade was found on file for them.\n\n");
-            System.out.println(foundLabGrade);
+            context.appendGradingScreenText("This lab belongs to: " + studentName);
+            context.appendGradingScreenText("\nA grade was found on file for them.\n\n");
+            context.appendGradingScreenText(foundLabGrade);
         } else {
-            System.out.println("This lab belongs to: " + studentName);
-            System.out.println("\nIt has not yet been graded.  If you wish to grade it, press the grade  button to the left.");
+            context.appendGradingScreenText("This lab belongs to: " + studentName);
+            context.appendGradingScreenText("\nIt has not yet been graded.  If you wish to grade it, press the grade  button to the left.");
         }
     }
 

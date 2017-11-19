@@ -32,7 +32,7 @@ public class QuestionGroup {
                 c = Integer.parseInt(parts[2].trim());
             }
             catch(Exception e) {
-                System.out.println("Error parsing int" + e + " ||| " + parts[2]);
+                System.out.println("Error parsing int" + e + " ||| " + parts[2]); // TODO: Evaluate this
             }
             maxGradePoints += c;
             Question q = new Question(parts[0], parts[1], c);
@@ -45,13 +45,13 @@ public class QuestionGroup {
         earnedGradePoints = 0;
         for(int i = 0; i < questionList.size(); i++){
             current = questionList.get(i);
-            System.out.print(current.displayToGrader() + " ");
+            context.appendGradingScreenTextSameLine(current.displayToGrader() + " ");
 
             input = context.getInput();
             if(input.equals("")){
                 current.grade();
                 earnedGradePoints += current.getMaxPoints();
-                System.out.println(current.getMaxPoints());
+                context.appendGradingScreenText(current.getMaxPoints());
             }
             else {
                 int grade = 0;
@@ -59,11 +59,11 @@ public class QuestionGroup {
                     grade = Integer.parseInt(input);
                 }
                 catch(Exception e){
-                    System.out.println("Grade could not be parsed" + input + " Exception: " + e);
+                    context.appendGradingScreenText("Grade could not be parsed" + input + " Exception: " + e);
                 }
                 current.grade(grade);
                 earnedGradePoints += grade;
-                System.out.println(grade);
+                context.appendGradingScreenText(grade);
             }
         }
     }

@@ -94,6 +94,10 @@ public class Extractor {
     }
     private static void copyUnitTestFile(String studentPath) {
         String unitTestPath = "./Resources/UnitTests/lab_" + context.config.getLabNumber() + "_test.cpp";
+        if(!new File(studentPath).exists()) {
+            context.displayDebugMessage("I could not copy the unit test script to " + studentPath + " because it does not exist");
+            return;
+        }
         try {
             FileLoader.copyFile(Paths.get(unitTestPath), Paths.get(studentPath + "lab_test.cpp"));
         } catch (IOException e) {
@@ -153,7 +157,13 @@ public class Extractor {
 
     public static void cleanupTmpFiles() {
         File f = new File(getTemporaryRoot());
-        f.delete();
+        if(f.exists()){
+            f.delete();
+        }
+    }
+    public static void cleanupTmpFiles(MainFrame mf) {
+        setContext(mf);
+        cleanupTmpFiles();
     }
     public static void extract(File archiveFile, MainFrame mf) {
         setContext(mf);
