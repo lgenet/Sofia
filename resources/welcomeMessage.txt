@@ -1,0 +1,19 @@
+Good day Logan, I do hope this day greats you well.
+
+My name is Sofia, and I am your assistant.  If you need additional help,
+please see the help menu located at the top of the screen.
+
+You can update a wide variety of configuration options from the config menu.
+These are things such as turning on advanced features that help speed up
+the grading by automatically moving forward after grading each lab.
+
+Anything saved in config will be written to a .cfg file and loaded next time
+so that you do not have to worry about resetting settings.  I can handle that for you!
+
+All of the imports into the system can be found under file.  Again do not worry, once
+you bring a file into the system (like the class list)  I will record that for you and
+make sure to load it nex time we start up again.
+
+Gnosi Sofia Dynami Charitos.
+
+If I can do anything to help, please let me know.
