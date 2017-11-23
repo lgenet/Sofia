@@ -8,8 +8,10 @@ public class Question {
     private int maxPoints;
     private String graderQuestion;
     private String rubricStatement;
+    private String testName;
 
-    public Question(String gQ, String rS, int mxPts) {
+    public Question(String tn, String gQ, String rS, int mxPts) {
+        testName = tn;
         maxPoints = mxPts;
         graderQuestion = gQ;
         rubricStatement = rS;
@@ -28,6 +30,7 @@ public class Question {
         setPoints();
     }
 
+    public String getTestName() { return testName.trim(); }
     public int getGrade() {
         return earnedPoints;
     }

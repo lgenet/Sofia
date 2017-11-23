@@ -6,36 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="674d6eac-f29b-4fcd-8c23-883086bf0bc3" name="Default" comment="Cleaned up Menu UI and added a few missing options.  Added extra messaging and clarity to the prepare lab flow in file.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/QuestionPane.java" />
-      <change type="DELETED" beforePath="C:\Users\Logan\IdeaProjects\Sofia\out\production\Sofia\GUI\ConsolePanel$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" afterPath="$PROJECT_DIR$/out/production/Sofia/SofiaCore/ConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/ConfigMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/ConsolePanel.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/ConsolePanel.class" />
+    <list default="true" id="674d6eac-f29b-4fcd-8c23-883086bf0bc3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Rubrics/lab10Questions.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/UnitTests/lab_10_test.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Core.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Core.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Extractor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/FileMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/HelpMenu.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/Menu/HelpMenu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/Lab.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/Lab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/LabLoader.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/LabManager.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/LabManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/LabPanel.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/LabPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame$1.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/Sofia/GUI/MainFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/Question.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/Question.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/QuestionGroup.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/QuestionGroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Builder/Runner.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Builder/Runner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/ConsolePanel.java" afterPath="$PROJECT_DIR$/src/GUI/ConsolePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sofia/Lab/TestResult.class" afterPath="$PROJECT_DIR$/out/production/Sofia/Lab/TestResult.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core.java" afterPath="$PROJECT_DIR$/src/Core.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Builder/Extractor.java" afterPath="$PROJECT_DIR$/src/Builder/Extractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" afterPath="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/Lab.java" afterPath="$PROJECT_DIR$/src/Lab/Lab.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/LabLoader.java" afterPath="$PROJECT_DIR$/src/Lab/LabLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/LabManager.java" afterPath="$PROJECT_DIR$/src/Lab/LabManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/LabPanel.java" afterPath="$PROJECT_DIR$/src/GUI/LabPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainFrame.java" afterPath="$PROJECT_DIR$/src/GUI/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/Question.java" afterPath="$PROJECT_DIR$/src/Lab/Question.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/QuestionGroup.java" afterPath="$PROJECT_DIR$/src/Lab/QuestionGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex.cpp" afterPath="$PROJECT_DIR$/ex.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab9.cpp" afterPath="$PROJECT_DIR$/lab9.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/QuestionPane.java" afterPath="$PROJECT_DIR$/src/GUI/QuestionPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lab/TestResult.java" afterPath="$PROJECT_DIR$/src/Lab/TestResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ser" afterPath="$PROJECT_DIR$/config.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Rubrics/lab8Questions.txt" afterPath="$PROJECT_DIR$/Resources/Rubrics/lab8Questions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Rubrics/lab9Questions.txt" afterPath="$PROJECT_DIR$/Resources/Rubrics/lab9Questions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp" afterPath="$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studentlist.txt" afterPath="$PROJECT_DIR$/studentlist.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sofia.iws" />
@@ -58,133 +48,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core.java">
+      <file leaf-file-name="lab_10_test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_10_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsolePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/ConsolePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-              <folding>
-                <element signature="e#1266#1267#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionPane.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/QuestionPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.34676006">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="e#2786#2787#0" expanded="true" />
-                <element signature="e#2825#2826#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.088235">
-              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lab/Lab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+              <caret line="195" column="45" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LabLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lab/LabLoader.java">
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Michael_Gitonga/lab_for_testing.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9705882">
-              <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="11" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LabManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lab/LabManager.java">
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Patrick_Roberts/lab_for_testing.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lab/QuestionGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SofiaCore/ConfigManager.java">
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Paul_Jaramillo/lab_for_testing.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
+      <file leaf-file-name="lab.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Paul_Jaramillo/lab.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2706#2707#0" expanded="true" />
-                <element signature="e#2731#2732#0" expanded="true" />
-                <element signature="e#3368#3369#0" expanded="true" />
-                <element signature="e#3410#3411#0" expanded="true" />
-                <element signature="e#3799#3800#0" expanded="true" />
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3904#3905#0" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-                <element signature="e#4013#4014#0" expanded="true" />
-                <element signature="e#4081#4082#0" expanded="true" />
-                <element signature="e#4168#4169#0" expanded="true" />
-                <element signature="e#4207#4208#0" expanded="true" />
-                <element signature="e#4331#4332#0" expanded="true" />
-                <element signature="e#4375#4376#0" expanded="true" />
-                <element signature="e#4407#4408#0" expanded="true" />
-                <element signature="e#4444#4445#0" expanded="true" />
-                <element signature="e#5826#5827#0" expanded="true" />
-                <element signature="e#5872#5873#0" expanded="true" />
-              </folding>
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Pouya_Ranjbar/lab_for_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Zach_Reed/lab_for_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.486911">
+              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Erick_Cueva/lab_for_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-32.83582">
+              <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Isaiah_Hua/lab_for_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_for_testing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Jake_Bishop/lab_for_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,7 +161,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="java-app-v2" target-remote="origin" target-branch="java-app-v2-1" />
+      <push-target-info repo="$PROJECT_DIR$" source="java-app-v2" target-remote="origin" target-branch="java-app-v2-5" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -213,57 +172,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GUI/MainMenuBar.java" />
-        <option value="$PROJECT_DIR$/config.cfg" />
-        <option value="$PROJECT_DIR$/src/ConfigManager.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Menu/ReportMenu.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Menu/MainMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/GUI/PreviousButton.java" />
-        <option value="$PROJECT_DIR$/src/GUI/NextButton.java" />
-        <option value="$PROJECT_DIR$/src/GUI/GradeButton.java" />
-        <option value="$PROJECT_DIR$/src/Builder/ZipUtil.java" />
-        <option value="$PROJECT_DIR$/src/Builder/UnzipUtil.java" />
-        <option value="$PROJECT_DIR$/src/Builder/StudentNameLoader.java" />
-        <option value="$PROJECT_DIR$/studentlist.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Builder/SanitizeCpp.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java" />
-        <option value="$PROJECT_DIR$/config.ser" />
-        <option value="$PROJECT_DIR$/resources/UnitTests/lab_1_test.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab1/Aaron Hiller/lab.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab1/Aaron Hiller/lab_test.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab_test.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab1/logan/lab1.cpp" />
-        <option value="$PROJECT_DIR$/src/Builder/FileLoader.java" />
-        <option value="$PROJECT_DIR$/src/Sanitizer/Sanitizer.java" />
-        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_1_test.cpp" />
-        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_7_test.cpp" />
-        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_6_test.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab8/Austin_Clark/lab_test.cpp" />
-        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp" />
-        <option value="$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java" />
-        <option value="$PROJECT_DIR$/ex.cpp" />
-        <option value="$PROJECT_DIR$/lab9.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab9/Aaron_Hiller/lab_test.cpp" />
-        <option value="$PROJECT_DIR$/Inputs/Lab9/Aaron_Hiller/lab_for_testing.cpp" />
-        <option value="$PROJECT_DIR$/Resources/Rubrics/lab8Questions.txt" />
-        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_9_test.cpp" />
-        <option value="$PROJECT_DIR$/src/SofiaCore/ConfigManager.java" />
-        <option value="$PROJECT_DIR$/src/Builder/Runner.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java" />
-        <option value="$PROJECT_DIR$/src/Builder/Extractor.java" />
         <option value="$PROJECT_DIR$/Inputs/Lab9/Asher_Aloni/lab_for_testing.cpp" />
         <option value="$PROJECT_DIR$/src/GUI/LabPanel.java" />
-        <option value="$PROJECT_DIR$/src/Core.java" />
         <option value="$PROJECT_DIR$/src/GUI/ConsolePanel.java" />
         <option value="$PROJECT_DIR$/src/GUI/Menu/FileMenu.java" />
-        <option value="$PROJECT_DIR$/src/Lab/LabManager.java" />
         <option value="$PROJECT_DIR$/src/Lab/LabLoader.java" />
-        <option value="$PROJECT_DIR$/src/Lab/QuestionGroup.java" />
-        <option value="$PROJECT_DIR$/src/Lab/Lab.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/Builder/Runner.java" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Aaron_Hiller/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/src/Lab/LabManager.java" />
+        <option value="$PROJECT_DIR$/src/Lab/Lab.java" />
+        <option value="$PROJECT_DIR$/src/Lab/QuestionGroup.java" />
+        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp" />
+        <option value="$PROJECT_DIR$/Resources/Rubrics/lab8Questions.txt" />
+        <option value="$PROJECT_DIR$/src/Lab/TestResult.java" />
+        <option value="$PROJECT_DIR$/src/Lab/Question.java" />
+        <option value="$PROJECT_DIR$/studentlist.txt" />
+        <option value="$PROJECT_DIR$/Resources/Rubrics/lab9Questions.txt" />
+        <option value="$PROJECT_DIR$/Grades/Lab9/Aaron_Hiller-Grade.txt" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Braden_Tucker/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Chris_Pollard/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Connor_Oberlin/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/David_Durden/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Devon_Johnson/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Irenous_Elangwe/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/James_Radcliff/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Lee_Vue/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Matt_Andagan/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Patrick_Roberts/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Patrick_Federico/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Spencer_Morton/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Waldemar_Karpynec/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab9/Yesenia_Perez/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/kevin/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/kevin/lab_test.cpp" />
+        <option value="$PROJECT_DIR$/Resources/Rubrics/lab10Questions.txt" />
+        <option value="$PROJECT_DIR$/src/Core.java" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Alec_Hart/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Aneasha_Caldwell/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Braden_Stonehill/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Casey_Hamilton/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Chris_Pollard/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Resources/UnitTests/lab_10_test.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Daniel_Herculano/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Erick_Cueva/lab_for_testing.cpp" />
         <option value="$PROJECT_DIR$/src/GUI/QuestionPane.java" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Isaiah_Hua/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Jake_Bishop/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Michael_Gitonga/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Patrick_Roberts/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Pouya_Ranjbar/lab_for_testing.cpp" />
+        <option value="$PROJECT_DIR$/Inputs/Lab10/Zach_Reed/lab_for_testing.cpp" />
       </list>
     </option>
   </component>
@@ -352,24 +311,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Builder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,6 +339,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rubrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sofia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -412,29 +389,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Grades" />
+              <option name="myItemId" value="Inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Lab9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sofia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grades" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lab8" />
+              <option name="myItemId" value="Lab10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,20 +415,21 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/SofiaCore/ConfigManager.java&#10;cor&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Core.java&#10;sani&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Sanitizer/SanitizeCpp.java&#10;sa&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Sanitizer/SanitizeCpp.java&#10;grad&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/GradeButton.java&#10;core&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Core.java&#10;lab&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Lab/LabLoader.java&#10;main&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/MainFrame.java&#10;labm&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Lab/LabManager.java" />
+    <property name="SearchEverywhereHistoryKey" value="questionpan&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/QuestionPane.java&#10;cor&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Core.java&#10;config&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/SofiaCore/ConfigManager.java&#10;sani&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Sanitizer/SanitizeCpp.java&#10;sa&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Sanitizer/SanitizeCpp.java&#10;grad&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/GradeButton.java&#10;core&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Core.java&#10;lab&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Lab/LabLoader.java&#10;main&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/GUI/MainFrame.java&#10;labm&#9;FILE&#9;file://C:/Users/Logan/IdeaProjects/Sofia/src/Lab/LabManager.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="GUI" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Resources\UnitTests" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Resources\Rubrics" />
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab10\kevin" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Release" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\resources" />
-      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1\kristy" />
-      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1\logan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab10\kevin" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Resources" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\resources" />
       <recent name="C:\Users\Logan\IdeaProjects\Sofia\Inputs\Lab1" />
@@ -688,7 +648,13 @@
       <option name="project" value="LOCAL" />
       <updated>1509209028917</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Redid the menu for the Questions and the user inputs.">
+      <created>1511068666398</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511068666398</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -702,7 +668,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -712,11 +678,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32666665" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16203208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16203208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -751,7 +717,8 @@
     <MESSAGE value="Cleaned up the grading flow and fixed a few breaking issues in that section." />
     <MESSAGE value="Working EXE" />
     <MESSAGE value="Cleaned up Menu UI and added a few missing options.  Added extra messaging and clarity to the prepare lab flow in file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up Menu UI and added a few missing options.  Added extra messaging and clarity to the prepare lab flow in file." />
+    <MESSAGE value="Redid the menu for the Questions and the user inputs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Redid the menu for the Questions and the user inputs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -768,17 +735,11 @@
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/MainFrame.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="38" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -787,308 +748,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/MainMenuBar.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/PreviousButton.java">
+    <entry file="file://$PROJECT_DIR$/src/Lab/TestResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="127" selection-start-line="31" selection-start-column="127" selection-end-line="31" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/NextButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extraction-errors.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studentlist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/HelpMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77249575">
-          <caret line="57" column="72" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ser">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/UnzipUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1205432">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/welcomeMessage.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48556876">
-          <caret line="13" column="86" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sanitizer/Sanitizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.411765">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sofia_bash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4411764">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70118845">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Rubrics/lab1Questions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_7_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29982963">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_6_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29982963">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_1_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14991482">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab9.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37351444">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.0203733">
-          <caret line="264" column="16" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#7435#0" expanded="false" />
-            <element signature="e#0#7435#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/GradeButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/FileLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44061303">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grades/Lab8/Aaron_Hiller-Grade.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sanitizer/SanitizeCpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Rubrics/lab8Questions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_9_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/ConfigMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="method#initSetLabNumber#0;class#ConfigMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Builder/Extractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1946#1947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Andres_Torres/lab_for_testing.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.832461">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Asher_Aloni/lab_for_testing.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26876092">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Rubrics/lab9Questions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/LabPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SofiaCore/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Menu/FileMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.088235">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1096,93 +783,406 @@
     <entry file="file://$PROJECT_DIR$/src/Lab/LabManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/LabLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9705882">
-          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ConsolePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="e#1266#1267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/Lab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lab/QuestionGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+          <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2731#2732#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <element signature="e#3410#3411#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3904#3905#0" expanded="true" />
-            <element signature="e#3961#3962#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4081#4082#0" expanded="true" />
-            <element signature="e#4168#4169#0" expanded="true" />
-            <element signature="e#4207#4208#0" expanded="true" />
-            <element signature="e#4331#4332#0" expanded="true" />
-            <element signature="e#4375#4376#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
-            <element signature="e#4444#4445#0" expanded="true" />
             <element signature="e#5826#5827#0" expanded="true" />
             <element signature="e#5872#5873#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lab/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lab/QuestionGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Rubrics/lab9Questions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="98" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grades/Lab9/Aaron_Hiller-Grade.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Builder/Extractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Builder/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="44" selection-start-line="133" selection-start-column="44" selection-end-line="133" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Braden_Tucker/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2647057">
+          <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Chris_Pollard/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Christian_Acosta/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Connor_Oberlin/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/David_Durden/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Devon_Johnson/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.382353">
+          <caret line="143" column="11" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Irenous_Elangwe/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grades/Lab9/Djanene_Manuel-Grade.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Jake_Bishop/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/James_Radcliff/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="77" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Lee_Vue/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Matt_Andagan/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Patrick_Roberts/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9117646">
+          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Patrick_Federico/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.970589">
+          <caret line="178" column="34" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Robert_Patterson/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Spencer_Morton/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.382353">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Waldemar_Karpynec/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="23" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab9/Yesenia_Perez/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_8_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.235294">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#7839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grades/Lab10/Aaron_Hiller-Grade.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Alec_Hart/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Rubrics/lab10Questions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Aneasha_Caldwell/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Braden_Stonehill/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Casey_Hamilton/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Chris_Pollard/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Daniel_Herculano/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/David_Durden/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/QuestionPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.34676006">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#2825#2826#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Erick_Cueva/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.83582">
+          <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Isaiah_Hua/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Jake_Bishop/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/UnitTests/lab_10_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="45" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Michael_Gitonga/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Patrick_Roberts/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Paul_Jaramillo/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Paul_Jaramillo/lab.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Pouya_Ranjbar/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inputs/Lab10/Zach_Reed/lab_for_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.486911">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -29,17 +29,17 @@ public class QuestionGroup {
 
             int c = 0;
             try {
-                c = Integer.parseInt(parts[2].trim());
+                c = Integer.parseInt(parts[3].trim());
             }
             catch(Exception e) {
-                System.out.println("Error parsing int" + e + " ||| " + parts[2]); // TODO: Evaluate this
+                System.out.println("Error parsing int" + e + " ||| " + parts[3]); // TODO: Evaluate this
             }
             maxGradePoints += c;
-            Question q = new Question(parts[0], parts[1], c);
+            Question q = new Question(parts[0], parts[1], parts[2], c);
             this.addQuestion(q);
         }
     }
-    public void grade(MainFrame context) {
+    public void grade(MainFrame context, TestResult tr) {
         Question current;
         String input;
         earnedGradePoints = 0;
@@ -47,25 +47,36 @@ public class QuestionGroup {
             current = questionList.get(i);
             context.appendGradingScreenTextSameLine(current.displayToGrader() + " ");
 
-            input = context.getInput();
-            if(input.equals("")){
-                current.grade();
-                earnedGradePoints += current.getMaxPoints();
-                context.appendGradingScreenText(current.getMaxPoints());
+            if(tr.isTestPassed(current.getTestName())) {
+                giveMaxPoints(context, current);
             }
             else {
-                int grade = 0;
-                try {
-                    grade = Integer.parseInt(input);
+                input = context.getInput();
+
+                if (input.equals("")) {
+                    giveMaxPoints(context, current);
+                } else {
+                    calculateGrade(context, current, input);
                 }
-                catch(Exception e){
-                    context.appendGradingScreenText("Grade could not be parsed" + input + " Exception: " + e);
-                }
-                current.grade(grade);
-                earnedGradePoints += grade;
-                context.appendGradingScreenText(grade);
             }
         }
+    }
+    private void giveMaxPoints(MainFrame context, Question current) {
+        current.grade();
+        earnedGradePoints += current.getMaxPoints();
+        context.appendGradingScreenText(current.getMaxPoints());
+    }
+    private void calculateGrade(MainFrame context, Question current, String input) {
+        int grade = 0;
+        try {
+            grade = Integer.parseInt(input);
+        }
+        catch(Exception e){
+            context.appendGradingScreenText("Grade could not be parsed" + input + " Exception: " + e);
+        }
+        current.grade(grade);
+        earnedGradePoints += grade;
+        context.appendGradingScreenText(grade);
     }
     public int getScore() {
         int score = 0;

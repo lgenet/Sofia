@@ -1,22 +1,21 @@
 Code follows formatting guidelines
-Header | Header | 5
-Purpose | Purpose | 2
-Indentation | Indentation | 4
-Good Practices | Follows good coding standards | 5
-unneeded Includes | Does not include unneeded #includes | 1
+test_header | Header | Header | 5
+test_purpose | Purpose | Purpose | 2
+test_indentation | Indentation | Indentation | 4
+test_good_practice | Good Practices | Follows good coding standards | 5
+test_unneeded_includes | unneeded Includes | Does not include unneeded #includes | 1
 
 |||Program functions correctly
-Reads in Data | Had function to read in data to array | 10
-Closed fin | Correctly handled files by closing fin | 3
-get average returns a double | Calculated the average and returned a double | 5
-get average returns correct value | Correctly calculated average | 7
-printed table header | Printed the table header correctly | 4
-printed table body | Printed the table body correctly | 8
-got the min value | Found the minimum value in the array | 4
-got the min position | Found the minimum value's position in the array | 4
-used linear search for min | Used linear searching to find the min value | 5
-got the maxvalue | Found the maximum value in the array | 4
-got the max position | Found the maximum value's position in the array | 4
-used linear search for max | Used linear searching to find the max value | 5
-Sort Descending | Correctly sorted the array in descending order | 9
-Print in a row | Print numbers in a row | 6
+test_read_size | Read in size updated size | Had a function to read in size from the user and updated it | 5
+test_fill_array | Fill worked with random | Had a function to fill the array with random numbers | 5
+test_sequential_search_found | Sequential can find | Sequential search was correctly able to locate a number | 10
+test_sequential_search_not_found | Sequential search not found | Sequential search returned -1 if the value is not in the array | 10
+test_binary_search_found_high | Binary Search find above mid | Binary Search was able to find a value in the top half of the list | 5
+test_binary_search_found_low | Binary Search find below mid | Binary Search was able to find a value in the bottom half of the list | 5
+test_binary_search_found_mid | Binary Search find mid | Binary search was able to find a value at the mid point of the list | 3
+test_binary_search_not_found | Binary search not found | Binary search correctly returned 01 if the value was not in the list | 5
+test_sort_ascending_01 | Sort Ascending | The array was correctly sorted in Ascending order | 5
+test_sort_descending_01 | Sort Descending | The array was correctly sorted in descending order | 7
+test_sort_different | Sorts are different | The sorts for ascending and descending used different algorithms | 10
+test_print_function | Printed Array | The Print function correctly displays all values in the array and their positions | 5
+test_coded_by | Coded by statement | The program correctly contains the Coded by Statement at the end of the program | 3

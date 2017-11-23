@@ -211,12 +211,9 @@ string getNarrowTable() {
 		"21\t82\t3.54545";
  	return ss.str();
 }
-TEST_F(Lab8Test, test_table_print) {
+TEST_F(Lab8Test, test_table_print_body) {
 	// Setup A
 	testing::internal::CaptureStdout();
-
-	string expectedWideHeader = "position no.\tgrade\tdifference from avg\n";
-	string expectedNarrowHeader = "pos\tgrade\tdifference from avg\n";
 
 	string expectedNarrowTableValues = getNarrowTable();
 	string expectedWideTableValues = getWideTable();
@@ -229,15 +226,34 @@ TEST_F(Lab8Test, test_table_print) {
 	string output = testing::internal::GetCapturedStdout();
 	std::transform(output.begin(), output.end(), output.begin(), ::tolower);
 
-	bool hasWideHeader = contains(output, expectedWideHeader);
-	bool hasNarrowHeader = contains(output, expectedNarrowHeader);
-
 	bool hasWideBody = contains(output, expectedWideTableValues);
 	bool hasNarrowBody = contains(output, expectedNarrowTableValues);
 
 	bool hasBody = hasWideBody || hasNarrowBody;
-	bool hasHeader = hasWideHeader || hasNarrowHeader;
 	EXPECT_EQ(hasBody, true) << "Table body did not appear correctly";
+}
+
+TEST_F(Lab8Test, test_table_print_header) {
+	// Setup A
+	testing::internal::CaptureStdout();
+
+	string expectedWideHeader = "position no.\tgrade\tdifference from avg\n";
+	string expectedNarrowHeader = "pos\tgrade\tdifference from avg\n";
+
+	int starting[] = {70, 95, 62, 88, 90, 85, 75, 79,  50, 80, 82, 88, 81, 93, 75, 78, 62, 55, 89, 94, 73, 82};
+
+	// Run Test
+	printGradesTable(starting, 22);
+
+	// Setup B
+	string output = testing::internal::GetCapturedStdout();
+	std::transform(output.begin(), output.end(), output.begin(), ::tolower);
+
+	bool hasWideHeader = contains(output, expectedWideHeader);
+	bool hasNarrowHeader = contains(output, expectedNarrowHeader);
+
+
+	bool hasHeader = hasWideHeader || hasNarrowHeader;
 	EXPECT_EQ(hasHeader, true) << "Table header did not appear correctly";
 }
 

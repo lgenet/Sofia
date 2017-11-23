@@ -34,6 +34,7 @@ public class QuestionPane extends JPanel {
 
         JPanel inputArea = new JPanel();
         inputView = new JTextArea();
+        inputView.setLineWrap(true);
         inputArea.setLayout(new BorderLayout());
         inputArea.add(new JLabel("Input"), BorderLayout.NORTH);
         inputArea.add(new JScrollPane(inputView), BorderLayout.CENTER);

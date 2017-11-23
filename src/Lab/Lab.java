@@ -98,7 +98,7 @@ public class Lab {
         score = 0;
         score -= latePenalty;
         for (int i = 0; i < questionGroups.size(); i++) {
-            questionGroups.get(i).grade(context);
+            questionGroups.get(i).grade(context, this.unitTestResult);
             score += questionGroups.get(i).getScore();
         }
         context.appendGradingScreenText("Comments: ");

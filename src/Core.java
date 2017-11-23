@@ -30,30 +30,6 @@ public class Core extends JPanel {
         return ss;
     }
 
-    private static String getUnitTestName(String line) {
-        line = line.split("Test.")[1];
-        return line.split("\\s")[0];
-    }
-    public static void readExampleUnitFile() {
-        File f = new File("Resources/test.out");
-        try {
-            Scanner scan = new Scanner(new FileInputStream(f));
-            while(scan.hasNext()) {
-                String line = scan.nextLine();
-                if(line.contains("[       OK ]")) {
-                    line = getUnitTestName(line);
-                    System.out.println(line);
-                }
-                else if(line.contains("[  FAILED  ]") && line.contains(".")) {
-                    line = getUnitTestName(line);
-                    System.err.println(line);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-    // TODO: build tab view that will show all lab files not just the first one
     public static void main(String args[]) {
         ConfigManager cm = getConfig();
         String[] studentList = {"logan", "kristy", "jane doe", "addison"};
@@ -66,7 +42,6 @@ public class Core extends JPanel {
         }
         LabManager manager = new LabManager(studentList, 0);
 
-        readExampleUnitFile();
         mf = new MainFrame(manager, cm);
         try {
             String welcome = LabLoader.readFile("./Resources/welcomeMessage.txt");
@@ -76,6 +51,17 @@ public class Core extends JPanel {
             mf.setGradingScreenText("Good day my name is Sofia, and I am here to be you guide.");
         }
 
+        // TODO: Understand why multiple failures prevents print and causes time out (Jessica S is an example in lab 9)
+        // TODO: Ask to continue if unit tests fail
+        // TODO: add comment box seperate so you can write ideas as you get them
+        // TODO: Flag for regarde/Submission verification/ETC
+        // TODO: Graphical representation of how far we are (ie who is graded, how many are left
+        // TODO: additional lab santization ie sortDec to sortDes
+        // TODO: Make grade window un-editable so I can not accidently change shit
+        // TODO: Add progress bar for compiler
+        // TODO: allow for supressing compile errors
         // TODO: Make run unit tests and auto apply those graded points
+        // TODO: Fix grade printouts so that they will update during the current run of the system.  Such that if you regrade a lab and then go back to it the loaded/shown grade file will be the one you just did and not the previous one.  It looks like it is just printing the results to a file and not updating the in memory reference
+        // TODO: build tab view that will show all lab files not just the first one
     }
 }

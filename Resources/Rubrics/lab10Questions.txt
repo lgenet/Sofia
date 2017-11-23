@@ -1,0 +1,15 @@
+Code follows formatting guidelines
+test_header | Header | Header | 5
+test_purpose | Purpose | Purpose | 3
+test_indentation | Indentation | Indentation | 4
+test_good_practice | Good Practices | Follows good coding standards | 5
+test_unneeded_includes | unneeded Includes | Does not include unneeded #includes | 1
+
+|||Program functions correctly
+test_fill_array | Program correctly filled matrix with data | The program correctly filled the matrix with semi-random numbers | 7
+test_print_function | Print Function works | The program correctly prints out the matrix | 10
+test_max | Found Max | The program was correctly able to find the maximum value in the matrix and its position | 10
+test_min | Found Min | The program was correctly able to find the minimum value in the matrix and its position | 10
+test_transpose | Transpose worked correctly | The program was correctly able to take the transposition of the array | 17
+test_transpose_method | Transpose was written correctly | The program implemented an in-place swap to transpose the matrix. | 20
+test_coded_by | Coded by statement | The program correctly contains the Coded by Statement at the end of the program | 3
