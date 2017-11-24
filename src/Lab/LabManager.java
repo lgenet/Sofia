@@ -75,6 +75,7 @@ public class LabManager implements GraderEvent {
 
     public void receivedNextEvent() {
         currentIndex++;
+        context.updateStatus("Now viewing lab " + (currentIndex + 1) + " out of " + listOfLabs.length + " labs.");
         if (currentIndex < listOfLabs.length) {
             context.loadLab(listOfLabs[currentIndex].getLabDocument());
             context.clearGradingScreen();

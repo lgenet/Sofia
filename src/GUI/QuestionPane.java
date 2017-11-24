@@ -22,6 +22,7 @@ public class QuestionPane extends JPanel {
         gradeView = new JTextArea("I am the Question List");
         gradeView.setFont(gradeView.getFont().deriveFont(14f)); // will only change size to 12pt
         gradeView.setBorder(new EmptyBorder(10, 10, 10, 10));
+        gradeView.setEditable(false);
         DefaultCaret caret = (DefaultCaret)gradeView.getCaret();
         caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 

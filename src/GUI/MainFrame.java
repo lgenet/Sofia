@@ -3,6 +3,7 @@ package GUI;
 import GUI.Menu.MainMenuBar;
 import SofiaCore.ConfigManager;
 import Lab.LabManager;
+import com.sun.javaws.progress.Progress;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -15,12 +16,13 @@ import java.io.File;
  * Created by Logan on 10/15/2017.
  */
 public class MainFrame extends JFrame {
-// NOTES!  UNDO CHANGES TO THIS FILE TO PUT BACK IT WORKING STATE.
-    // CURRENTLY UNDER MAINTENANCE TO REPLACE GRADE pNAE WITH SCALAbLE SOlUTION
     private ConsolePanel consolePane; // Will eventually be another toggleable frame
     private QuestionPane questionPane;
     private LabPanel labPane;
     private LabManager manager;
+    private StatusBar statusBar;
+
+    private ProgressBar pb;
 
     public ConfigManager config;
 
@@ -70,7 +72,12 @@ public class MainFrame extends JFrame {
                 shutDown();
             }
         });
+
+        statusBar = new StatusBar();
+        pb = new ProgressBar();
+
         this.add(mainPane, BorderLayout.CENTER);
+        this.add(statusBar, BorderLayout.SOUTH);
         this.setTitle("Sofia");
         this.pack();
         this.setVisible(true);
@@ -182,5 +189,29 @@ public class MainFrame extends JFrame {
     }
     public String getInput() {
         return questionPane.getInput();
+    }
+
+    /******************************************
+     * Methods for updating the status Bar
+     */
+    public void updateStatus(String message){
+        statusBar.setText(message);
+    }
+
+    /******************************************
+     * Progress Bar Functions
+     */
+    public void startProgressBar(String t, int localTotal) {
+        pb.showModal(t, localTotal);
+    }
+    public void startProgressBar(int localTotal) {
+        pb.showModal(localTotal);
+    }
+    public void updateProgressBar() {
+        SwingUtilities.invokeLater(() -> pb.updateBar());
+    }
+
+    public void endProgressBar() {
+        pb.hideModal();
     }
 }

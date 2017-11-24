@@ -19,7 +19,7 @@ public class LabPanel extends JPanel {
 //        labView.setColumns(75);
         labView.setFont(labView.getFont().deriveFont(14f)); // will only change size to 12pt
         labView.setBorder(new EmptyBorder(10, 10, 10, 10));
-
+        labView.setEditable(false);
         setLabView("");
         JScrollPane js = new JScrollPane(labView);
 

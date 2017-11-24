@@ -20,6 +20,7 @@ public class ConfigManager implements Serializable {
     private boolean canAutoContinue;    // Will automatically go to the next lab after one is graded
     private boolean runTestOnSwitch;    // will run the test as soon as the next (or previous) lab is loaded
     private boolean debugMode;          // Will allow debug messages to print
+    private boolean suppressCompileErr; // Will allow debug messages to print
 
     private int labNumber;              // The current Lab number
     private String inputFile;           // The name of the input file to be copied into each submission folder
@@ -39,6 +40,7 @@ public class ConfigManager implements Serializable {
         canAutoContinue = false;
         runTestOnSwitch = false;
         debugMode = false;
+        suppressCompileErr = false;
 
         labNumber = 1;
         inputFile = "";
@@ -58,7 +60,8 @@ public class ConfigManager implements Serializable {
                 + "runTestOnSwitch = " + runTestOnSwitch + "\n"
                 + "labNumber = " + labNumber + "\n"
                 + "inputFile = " + inputFile + "\n"
-                + "debugMode = " + debugMode + "\n";
+                + "debugMode = " + debugMode + "\n"
+                + "supressCompileErr = " + suppressCompileErr + "\n";
     }
     public void writeConfig() {
         try {
@@ -121,6 +124,10 @@ public class ConfigManager implements Serializable {
     public void setRunTestOnSwitch(boolean runTestOnSwitch) {
         this.runTestOnSwitch = runTestOnSwitch;
     }
+
+    public boolean isSuppressCompileErr() { return suppressCompileErr; }
+
+    public void setSuppressCompileErr(boolean suppressCompileErr) { this.suppressCompileErr = suppressCompileErr; }
 
     public int getLabNumber() {
         return labNumber;
