@@ -28,14 +28,16 @@ public class LabManager implements GraderEvent {
 
     private void setStudentListAction(String[] list) {
         studentList = list;
-        for(int i = 0; i < studentList.length; i++){
+        for (int i = 0; i < studentList.length; i++) {
             studentList[i] = studentList[i].replaceAll(" ", "_");
         }
     }
+
     public void setStudentList(String[] list) {
         setStudentListAction(list);
         rebuildLabs();
     }
+
     public String[] getStudentList() {
         return studentList;
     }
@@ -55,6 +57,11 @@ public class LabManager implements GraderEvent {
         runUnitTest();
         context.appendGradingScreenText("");
 
+        if (listOfLabs[currentIndex].getUnitTestRawResults().toString().trim().equals("")
+                && !context.confirm("I am sorry, but the unit tests didn't work... Do you want me to continue grading this lab?")) {
+            context.displayMessage("Okay then!  I will not grade the lab.  Carry on.");
+            return;
+        }
         listOfLabs[currentIndex].grade(context);
 
         if (context.config.isCanAutoContinue()) {
@@ -64,19 +71,22 @@ public class LabManager implements GraderEvent {
 
     public void receivedPreviousEvent() {
         currentIndex--;
+
         if (currentIndex >= 0) {
+            context.updateStatus("Now viewing lab " + (currentIndex + 1) + " out of " + listOfLabs.length + " labs.");
             context.loadLab(listOfLabs[currentIndex].getLabDocument());
             context.clearGradingScreen();
             listOfLabs[currentIndex].printStatus(context);
         } else {
+            context.updateStatus("Ready");
             handelOutOfBounds(-1, "You are at the beginning, you can not go any further back.");
         }
     }
 
     public void receivedNextEvent() {
         currentIndex++;
-        context.updateStatus("Now viewing lab " + (currentIndex + 1) + " out of " + listOfLabs.length + " labs.");
         if (currentIndex < listOfLabs.length) {
+            context.updateStatus("Now viewing lab " + (currentIndex + 1) + " out of " + listOfLabs.length + " labs.");
             context.loadLab(listOfLabs[currentIndex].getLabDocument());
             context.clearGradingScreen();
             listOfLabs[currentIndex].printStatus(context);
@@ -84,6 +94,7 @@ public class LabManager implements GraderEvent {
                 runUnitTest();
             }
         } else {
+            context.updateStatus("All Labs Completed");
             handelOutOfBounds(listOfLabs.length, "There are no more labs to grade.  Feel free to go back and review the graded labs.");
         }
     }
@@ -102,11 +113,10 @@ public class LabManager implements GraderEvent {
             return;
         }
         String fileName;
-        if(context.config.getCompilerPreference().equals("UnitTest")) {
+        if (context.config.getCompilerPreference().equals("UnitTest")) {
             context.appendGradingScreenText("Running unit tests...");
             fileName = "unitTest" + context.config.getUnitTestExeName();
-        }
-        else {
+        } else {
             context.appendGradingScreenText("Running the lab...");
             fileName = "runnable" + context.config.getUnitTestExeName();
         }

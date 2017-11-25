@@ -41,7 +41,7 @@ public class Core extends JPanel {
         if(!cm.getStudentListPath().equals("")) {
             studentList = FileLoader.loadStudentList(new File(cm.getStudentListPath()));
         }
-        LabManager manager = new LabManager(studentList, 9);
+        LabManager manager = new LabManager(studentList, 0);
 
         mf = new MainFrame(manager, cm);
         mf.rebuildLabs();

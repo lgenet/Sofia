@@ -205,6 +205,7 @@ public class ConfigMenu extends Menu {
             try {
                 String s = JOptionPane.showInputDialog(null, "Please enter the lab number you wish for me to consider.");
                 context.config.setLabNumber(Integer.parseInt(s));
+                context.rebuildLabs();
             } catch (Exception ex) {
                 context.displayError("I am sorry but I could not set the lab number for you, here is some more info:\n" + ex);
             }
