@@ -86,11 +86,15 @@ public class Extractor {
         return fileName;
     }
 
-    private static String extractStudentSubmission(File current, String studentName) throws IOException {
-        String temporaryLabPath = getRawStudentExtractPath() + "/" + studentName;
-        UnzipUtil.unzip(current.getPath(), temporaryLabPath);
-
-        return temporaryLabPath;
+    private static void bundleStudentSubmission(File current, String labPath) throws  IOException {
+        File path = new File(labPath);
+        if(!path.exists()) {
+            path.mkdirs();
+        }
+        FileLoader.copyFile(current.toPath().toString(), (labPath + "/" + current.getName()));
+    }
+    private static void extractStudentSubmission(File current, String labPath) throws IOException {
+        UnzipUtil.unzip(current.getPath(), labPath);
     }
     private static void copyUnitTestFile(String studentPath) {
         String unitTestPath = "./Resources/UnitTests/lab_" + context.config.getLabNumber() + "_test.cpp";
@@ -186,10 +190,19 @@ public class Extractor {
 
         for (int i = 0; i < listOfStudentZips.length; i++) {
             File current = listOfStudentZips[i];
-            String studentName = getStudentNameFromFile(current);
-// TODO: Eval if we want to update student list here?
+            String studentName = getStudentNameFromFile(current); // TODO: Eval if we want to update student list here?
+
             try {
-                String studentLabTemporaryPath = extractStudentSubmission(current, studentName);
+                String studentLabTemporaryPath = getRawStudentExtractPath() + "/" + studentName;
+                if(current.getName().contains(".zip")){
+                    extractStudentSubmission(current, studentLabTemporaryPath);
+                }
+                else if(current.getName().contains((".rar"))) {
+                    context.displayError("Student: " + studentName + " used a .rar file to submit.  I can not handle this!");
+                }
+                else if(current.getName().contains(".")) {
+                    bundleStudentSubmission(current, studentLabTemporaryPath);
+                }
                 String studentLabFinalPath = condenseLabDirectory(studentLabTemporaryPath, studentName);
                 copyUnitTestFile(studentLabFinalPath);
             }

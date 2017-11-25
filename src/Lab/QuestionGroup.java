@@ -26,7 +26,10 @@ public class QuestionGroup {
     private void massAddQuestions(int i, String[] lines) {
         for(; i < lines.length; i++ ){
             String[] parts = lines[i].split("\\|");
-
+            if(parts.length != 4) { // TODO: Bad patch around invalid formatted questiosn
+                System.out.println("Error: Question did not have correct format\n" + lines[i]);
+                continue;
+            }
             int c = 0;
             try {
                 c = Integer.parseInt(parts[3].trim());

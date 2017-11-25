@@ -7,12 +7,15 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
+import java.util.concurrent.*;
 /**
  * Created by Logan on 10/18/2017.
  */
 public class Runner {
 
+    private static ArrayList<Thread> threadBundle;
     private static void waitFor(Process process, int limit) {
         long start = System.currentTimeMillis();
         while (process.isAlive() && System.currentTimeMillis() - start < limit);
@@ -61,6 +64,11 @@ public class Runner {
     // TODO: Write compilers for things beyond C++ and add a switch that will use the right one
     // TODO: break this out to a compiler file that can compile into multiple langauges
     public static void compile(MainFrame context) {
+        Thread t = new Thread(() -> compileWorker(context));
+        t.start();
+    }
+
+    private static void compileWorker(MainFrame context) {
         String[] studentList = context.getStudentList();
         String compilerPref = context.config.getCompilerPreference();
         if (!compilerPref.equals("Runnable")) {
@@ -69,6 +77,8 @@ public class Runner {
         } else {
             context.displayMessage("I am going to start the compilation step now... this might take a few moments...");
         }
+
+        context.startProgressBar("Compiling Labs Progress...", context.getStudentList().length); // Start the progress bar
 
         for (int i = 0; i < studentList.length; i++) {
             String labPath = context.config.getStudentInputPath() + "Lab" + context.config.getLabNumber() + "/" + studentList[i];
@@ -87,9 +97,12 @@ public class Runner {
                     context.displayMessage("Uh... I am not quite sure what happened but I dont think your compiler preference is valid." +
                             "I am sorry about that, I will stop trying to compile.  You should probably check this preference " +
                             "before trying to compile again...");
+                    context.endProgressBar();
                     return;
             }
         }
+        context.endProgressBar();
+        context.displayMessage("Wooooo!  That was a lot of work!  But I am done compiling now.");
     }
 
     private static void compileForRunning(MainFrame context, String labPath) {
@@ -97,9 +110,7 @@ public class Runner {
         String outputName = new File(labPath + "/runnable" + context.config.getUnitTestExeName()).toString();
         context.displayDebugMessage("Compiling runnable at " + labName + "\nTO\n" + outputName);
         ProcessBuilder proc = new ProcessBuilder(context.config.getCppCompilerPath(), labName, "-o", outputName);
-        if(!runProcess(context, proc)) {
-            context.displayError("I am sorry, but I could not compile the lab document for " + labPath);
-        }
+        runProcess(context, proc);
     }
 
     public static void compileForUnitTest(MainFrame context, String labPath) {
@@ -117,12 +128,9 @@ public class Runner {
                 libgtestPath,
                  "-o", outputName);
         proc.directory(new File(labPath));
-        if(!runProcess(context, proc)) {
-            context.displayError("I am sorry, but I could not compile unit tests for " + labPath);
-        }
+        runProcess(context, proc);
     }
-
-    private static boolean runProcess(MainFrame context, ProcessBuilder compileProcess) {
+    private static void runProcess(MainFrame context, ProcessBuilder compileProcess) {
         try {
             compileProcess.directory(new File("./"));
             Process process = compileProcess.start();
@@ -134,15 +142,17 @@ public class Runner {
             process.waitFor(); // wait for the process to terminate
 
             String errors = getResults(reader);
-            if(!errors.isEmpty()) {
+            if(!errors.isEmpty() && !context.config.isSuppressCompileErr()) {
                 context.displayError("I found some errors while compiling... here's what happened:\n\n" + errors);
             }
             reader.close();
-            return true;
+            context.updateProgressBar();
         } catch (Exception e) {
-            context.displayError("I am sorry, but something went really wrong while trying to compile that file for you.  " +
-                    "Here are some more details:\n" + e);
-            return false;
+            if(!context.config.isSuppressCompileErr()) {
+                context.displayError("I am sorry, but something went really wrong while trying to compile that file for you.  " +
+                        "Here are some more details:\n" + e);
+            }
+            context.updateProgressBar();
         }
     }
 }

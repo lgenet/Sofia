@@ -81,7 +81,9 @@ public class FileMenu extends Menu {
             Extractor.cleanupTmpFiles();
             context.displayMessage("Okay!  I am ready to start compiling the labs!");
             Runner.compile(context);
-            context.displayMessage("Okay!  Thank you for being patient with me!  I am done preparing your labs for you!");
+            context.displayMessage("Okay!  Thank you for being patient with me!  " +
+                    "I am done preparing your labs for you... compiling will finish when the progress bar fills.\n" +
+                    "I will also let you know when that is done.  Once so, you are good to go!");
         });
         return master;
     }
@@ -119,10 +121,7 @@ public class FileMenu extends Menu {
 
     private MenuItem initCompiler() {
         MenuItem compiler = new MenuItem("Compile Lab Tests");
-        compiler.addActionListener(e -> {
-            Runner.compile(context); // TODO: make config setting
-            context.displayMessage("Wooooo!  That was a lot of work!  But I am done compiling now.");
-        });
+        compiler.addActionListener(e -> Runner.compile(context));
         return compiler;
     }
 

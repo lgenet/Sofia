@@ -20,6 +20,8 @@ public class Lab {
     private boolean gradeWasFoundOnFile;
     private String foundLabGrade;
 
+    private boolean wasRegraded;
+
     private TestResult unitTestResult;
 
     public Lab(int number, String name, ArrayList<QuestionGroup> questions) {
@@ -51,6 +53,7 @@ public class Lab {
         unitTestResult = null;
         isGraded = false;
         gradeWasFoundOnFile = false;
+        wasRegraded = false;
     }
 
     public void foundGrade(String grade) {
@@ -59,6 +62,9 @@ public class Lab {
         foundLabGrade = grade;
     }
 
+    public String getUnitTestRawResults() {
+        return unitTestResult.getResultString();
+    }
     public TestResult getUnitTestResults() {
         return unitTestResult;
     }
@@ -93,6 +99,7 @@ public class Lab {
                 context.appendGradingScreenText("Skipping regrade...");
                 return;
             }
+            this.wasRegraded = true;
             context.clearGradingScreen();
         }
         score = 0;
@@ -114,7 +121,7 @@ public class Lab {
     }
 
     public void printStatus(MainFrame context) {
-        if (isGraded && !gradeWasFoundOnFile) {
+        if (isGraded && (!gradeWasFoundOnFile || wasRegraded)) {
             context.appendGradingScreenText(this.toString());
         } else if(isGraded && gradeWasFoundOnFile) {
             context.appendGradingScreenText("This lab belongs to: " + studentName);

@@ -18,6 +18,7 @@ public class ConfigMenu extends Menu {
         super("Config");
         this.context = context;
         this.add(initDebugMode());
+        this.add(initSuppressError());
         this.addSeparator();
         this.add(initSetLabNumber());
         this.add(initSetInputFile());
@@ -116,7 +117,7 @@ public class ConfigMenu extends Menu {
             context.config.setDebugMode(!context.config.isDebugMode());
             if(context.config.isDebugMode()){
                 context.displayMessage("okay!  You are now running in debug mode!  These messages will appear slightly different... " +
-                    "They also might not sound like me, but they should provide additional diagnostic info...");
+                        "They also might not sound like me, but they should provide additional diagnostic info...");
             }
             else {
                 context.displayMessage("Okay!  I wont show you those pesky debug messages anymore.");
@@ -124,6 +125,20 @@ public class ConfigMenu extends Menu {
         });
         return debug;
     }
+    private MenuItem initSuppressError() {
+        MenuItem debug = new MenuItem("Ignore Error Msg");
+        debug.addActionListener(e -> {
+            context.config.setSuppressCompileErr(!context.config.isSuppressCompileErr());
+            if(context.config.isSuppressCompileErr()){
+                context.displayMessage("Okay... if you are sure about this.  I will not alert you to any errors in the compilation step!");
+            }
+            else {
+                context.displayMessage("Okay!  I wont ignore the errors during compiling anymore.");
+            }
+        });
+        return debug;
+    }
+
     private MenuItem initGetLibgFile() {
         MenuItem libG = new MenuItem("Select libgtest.a file");
         libG.addActionListener(e -> {
@@ -190,6 +205,7 @@ public class ConfigMenu extends Menu {
             try {
                 String s = JOptionPane.showInputDialog(null, "Please enter the lab number you wish for me to consider.");
                 context.config.setLabNumber(Integer.parseInt(s));
+                context.rebuildLabs();
             } catch (Exception ex) {
                 context.displayError("I am sorry but I could not set the lab number for you, here is some more info:\n" + ex);
             }
