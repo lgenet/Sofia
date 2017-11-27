@@ -45,7 +45,7 @@ public class Core extends JPanel {
 
         mf = new MainFrame(manager, cm);
         mf.rebuildLabs();
-        mf.startProgressBar("Testing the title...", 10);
+
         try {
             String welcome = LabLoader.readFile("./Resources/welcomeMessage.txt");
             mf.setGradingScreenText(welcome);

@@ -1,5 +1,7 @@
 package Sanitizer;
 
+import Builder.Extractor;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,7 +36,7 @@ public class SanitizeCpp extends Sanitizer {
 		return current;
 	}
 	private static String sanitizeForIO(String current) {
-		if(!current.contains(".txt")) {
+		if(!(current.contains(".txt") && current.contains("\"") && current.contains(")"))) {
 			return current;
 		}
 		String fileName = "input.txt";
@@ -61,7 +63,7 @@ public class SanitizeCpp extends Sanitizer {
 		}
 		return current;
 	}
-	private static boolean containsRqeuiredMethod(String current) {
+	private static boolean containsRequiredMethod(String current) {
 //		for(int i = 0; i < requiredMethods.length; i++) {
 //			if(current.contains(requiredMethods[i])) {
 //				return true;
@@ -70,7 +72,7 @@ public class SanitizeCpp extends Sanitizer {
 		return false;
 	}
 	private static String sanitizeMethods(String current) {
-		if(!containsRqeuiredMethod(current)){
+		if(!containsRequiredMethod(current)){
 			return current;
 		}
 		return current;
@@ -80,8 +82,10 @@ public class SanitizeCpp extends Sanitizer {
 		ArrayList<String> file = new ArrayList<String>();
 		String temp = fin.readLine();
 		while(temp != null){
+			try {
+
 			if(!(temp.contains("Student Name:") || temp.contains("namespace") || temp.toLowerCase().contains("program")  || temp.contains("cout"))){
-				temp = sanitizeForStudentName(temp);
+//				temp = sanitizeForStudentName(temp);
 				temp = sanitizeForIO(temp);
 				if(isTestSubject){
 					temp = sanitizeForMain(temp);
@@ -91,6 +95,11 @@ public class SanitizeCpp extends Sanitizer {
 
 			file.add(temp);
 			temp = fin.readLine();
+			}
+			catch(Exception e) {
+				System.out.println(e);
+				System.out.println(temp);
+			}
 		}
 		return file;
 	}

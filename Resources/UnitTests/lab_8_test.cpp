@@ -82,7 +82,6 @@ string stringify(double input) {
  */
 TEST_F(Lab8Test, test_readin) {
 	// Setup A
-	testing::internal::CaptureStdout();
 	int expected[] = {70, 95, 62, 88, 90, 85, 75, 79,  50, 80, 82, 88, 81, 93, 75, 78, 62, 55, 89, 94, 73, 82};
  	int actual[22];
 	// Run Test
@@ -264,7 +263,6 @@ TEST_F(Lab8Test, test_table_print_header) {
 
 TEST_F(Lab8Test, test_sort) {
 	// Setup A
-	testing::internal::CaptureStdout();
  	int expected[] = {95, 94, 93, 90, 89, 88, 88, 85, 82, 82, 81, 80, 79, 78, 75, 75, 73, 70, 62, 62, 55, 50};
 	int starting[] = {70, 95, 62, 88, 90, 85, 75, 79,  50, 80, 82, 88, 81, 93, 75, 78, 62, 55, 89, 94, 73, 82};
 

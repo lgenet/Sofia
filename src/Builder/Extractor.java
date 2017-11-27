@@ -108,6 +108,22 @@ public class Extractor {
             context.displayError("I am sorry about this but I could not add the unit test file to the student's submission package");
         }
     }
+    private static void copyInputFile(String studentPath) {
+        String inputFile = context.config.getInputFile();
+        if(inputFile == null || inputFile.equals("")) {
+            return;
+        }
+        String inputResourcePath = "./Resources/InputFiles/" + inputFile;
+        if(!new File(studentPath).exists()) {
+            context.displayDebugMessage("I could not copy the unit test script to " + studentPath + " because it does not exist");
+            return;
+        }
+        try {
+            FileLoader.copyFile(Paths.get(inputResourcePath), Paths.get(studentPath + "input.txt"));
+        } catch (IOException e) {
+            context.displayError("I am sorry about this but I could not add the unit test file to the student's submission package");
+        }
+    }
     private static String condenseLabDirectory(String studentLabTemporaryPath, String studentName) throws IOException {
         labCount = 0;
         String finalStudentPath = getStudentLabDestinationPath() + "/" + studentName + "/";
@@ -204,6 +220,7 @@ public class Extractor {
                     bundleStudentSubmission(current, studentLabTemporaryPath);
                 }
                 String studentLabFinalPath = condenseLabDirectory(studentLabTemporaryPath, studentName);
+                copyInputFile(studentLabFinalPath);
                 copyUnitTestFile(studentLabFinalPath);
             }
             catch(IOException ioe) {

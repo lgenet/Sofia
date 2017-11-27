@@ -1,0 +1,20 @@
+Code follows formatting guidelines
+test_header | Header | Header | 5
+test_purpose | Purpose | Purpose | 3
+test_indentation | Indentation | Indentation | 6
+test_unneeded_includes | unneeded Includes | Does not include unneeded #includes | 1
+test_coded_by | Coded by statement | The program correctly contains the Coded by Statement at the end of the program | 3
+
+|||Program sets up magic boxes correctly
+test_read_size | Read in size | Correctly read in the size for a magic box | 2
+test_read_data | Read in box | Correctly read in magic boxes from a file | 8
+test_print_function | Print Matrix | Correctly prints out the magic box to the screen | 12
+
+|||Program performs calculations correctly
+test_sum_row | Sum Row | Correctly summed up the values in each row | 5
+test_sum_col | Sum Col | Correctly summed up the values in each column | 5
+test_sum_main_diagonal | Sum Main Diagonal | Correctly summed up the numbers on the main Diagonal | 10
+test_sum_other_diagonal | Sum Other Diagonal | Correctly summed up numbers on the reverse/other diagonal | 20
+
+|||Program can determine if a box is magic
+test_is_magic | Magic Box Check works | Correctly was able to identify if a box was magic. | 15
