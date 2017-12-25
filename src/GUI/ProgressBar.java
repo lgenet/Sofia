@@ -38,7 +38,7 @@ public class ProgressBar extends JFrame {
         this.setContentPane(contentPane);
         this.pack();
         this.setSize(200, 100);
-        this.setAlwaysOnTop(true); // TODO: Experimental
+        this.setAlwaysOnTop(true);
     }
 
     public void showModal(String t, int local) {
@@ -48,6 +48,7 @@ public class ProgressBar extends JFrame {
     public void showModal(int local) {
         localTotal = local;
         updates = 0;
+        pbar.setValue(0);
         this.setVisible(true);
     }
     public void hideModal() {

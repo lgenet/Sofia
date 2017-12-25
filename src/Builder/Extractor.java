@@ -175,11 +175,30 @@ public class Extractor {
         }
     }
 
+    public static void addInputFiles() {
+
+        File folder = new File(getStudentLabDestinationPath());
+        File[] listOfStudentZips = folder.listFiles();
+
+        for (int i = 0; i < listOfStudentZips.length; i++) {
+            File current = listOfStudentZips[i];
+            String studentName = current.getName();
+            copyInputFile(getStudentLabDestinationPath() + "/" + studentName + "/");
+        }
+    }
     public static void cleanupTmpFiles() {
         File f = new File(getTemporaryRoot());
         if(f.exists()){
-            f.delete();
+            deleteFile(f);
         }
+    }
+    public static void deleteFile(File element) {
+        if (element.isDirectory()) {
+            for (File sub : element.listFiles()) {
+                deleteFile(sub);
+            }
+        }
+        element.delete();
     }
     public static void cleanupTmpFiles(MainFrame mf) {
         setContext(mf);
@@ -190,7 +209,7 @@ public class Extractor {
         extract(archiveFile);
     }
 
-    public static void extract(File archiveFile) {
+    private static void extract(File archiveFile) {
         try{
             UnzipUtil.unzip(archiveFile.getPath(), getUnArchivedPath());
         }

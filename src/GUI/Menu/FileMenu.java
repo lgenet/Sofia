@@ -20,12 +20,14 @@ public class FileMenu extends Menu {
     public FileMenu(MainFrame mf) {
         super("File");
         context = mf;
+        Extractor.setContext(mf); // TODO: Eval if this should be here
 
         this.add(initStudentListPicker());
         this.addSeparator();
         this.add(initMasterPrepare());
         this.addSeparator();
         this.add(initExtractZip());
+        this.add(initInputFileAdder());
         this.add(initSanitizer());
         this.add(initCompiler());
         this.add(initCleanupFiles());
@@ -86,6 +88,14 @@ public class FileMenu extends Menu {
                     "I will also let you know when that is done.  Once so, you are good to go!");
         });
         return master;
+    }
+    private MenuItem initInputFileAdder() {
+        MenuItem inputter = new MenuItem("Distribute Input Files");
+        inputter.addActionListener(e -> {
+            Extractor.addInputFiles();
+            context.displayMessage("Everyone now has a copy of the input file!");
+        });
+        return inputter;
     }
     private MenuItem initCleanupFiles() {
         MenuItem cleanUp = new MenuItem("Clean up tmp files");

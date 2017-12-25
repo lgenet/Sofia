@@ -206,6 +206,7 @@ public class ConfigMenu extends Menu {
                 String s = JOptionPane.showInputDialog(null, "Please enter the lab number you wish for me to consider.");
                 context.config.setLabNumber(Integer.parseInt(s));
                 context.rebuildLabs();
+                context.displayMessage("Okay, we are now looking at lab " + context.config.getLabNumber());
             } catch (Exception ex) {
                 context.displayError("I am sorry but I could not set the lab number for you, here is some more info:\n" + ex);
             }
@@ -218,6 +219,7 @@ public class ConfigMenu extends Menu {
         setLabNumber.addActionListener(e -> {
             String s = context.getInputMessage("What input file do you want to use? (leave empty for none)");
             context.config.setInputFile(s);
+            context.displayMessage("Okay!  I will remember the input file to use is: " + context.config.getInputFile());
         });
         return setLabNumber;
     }
