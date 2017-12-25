@@ -1,0 +1,184 @@
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 1
+Please enter a size for the array, 1-100.
+15
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 2
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 3
+0 41
+1 85
+2 72
+3 38
+4 80
+5 69
+6 65
+7 68
+8 96
+9 22
+10 49
+11 67
+12 51
+13 61
+14 63
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 6
+Enter a target to search for.
+41
+Found in position 0
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 6
+Enter a target to search for.
+200
+Not found.
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 4
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 3
+0 22
+1 38
+2 41
+3 49
+4 51
+5 61
+6 63
+7 65
+8 67
+9 68
+10 69
+11 72
+12 80
+13 85
+14 96
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 7
+Enter a target to search for.
+41
+Found in position 2
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 7
+Enter a target to search for.
+200
+Not found.
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 5
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 3
+0 96
+1 85
+2 80
+3 72
+4 69
+5 68
+6 67
+7 65
+8 63
+9 61
+10 51
+11 49
+12 41
+13 38
+14 22
+-------------------------------------
+0. Exit
+1. Get the size for the array
+2. Fill the array with random numbers, 1-100
+3. Print the array with position numbers
+4. Print the array in ascending sequence
+5. Sort the array in descending sequence
+6. Sequential search of the array for a target
+7. Binary search of the array for a target
+Type in a choice: 0
+Coded by Jim Cargile
+
+--------------------------------
+Process exited after 43.48 seconds with return value 0
+Press any key to continue . . .
